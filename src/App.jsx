@@ -1,10 +1,13 @@
 import React from "react";
-import "./App.css";
+import "./css/App.css";
+import Header from "./Components/Header";
+import "./css/normalize.css";
+
 const App = () => {
   return (
-    <div>
-      <h1>imbecil</h1>
-    </div>
+    <>
+      <Header />
+    </>
   );
 };
 

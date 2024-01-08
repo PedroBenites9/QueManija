@@ -1,0 +1,11 @@
+/* globals */
+/*  FLEX */
+.flex-header {
+    display: flex;
+}
+
+/* Header */
+.img__logo {
+    width: 40px;
+    height: auto;
+}
