@@ -1,11 +1,76 @@
 /* globals */
-/*  FLEX */
-.flex-header {
+header {
     display: flex;
 }
 
+/*  FLEX */
+.flex-header {}
+
+
 /* Header */
-.img__logo {
+.header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.input__lupa {
+    position: relative;
+}
+
+.input-icon {
+    color: #191919;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header__busqueda {
+    height: 30px;
+    border-radius: 5px;
+    padding: 15px 15px 15px 35px;
+    width: 100%;
+}
+
+.header__logo {
     width: 40px;
     height: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    gap: 20px
+}
+
+/* body */
+
+/* cardGrid contenedor */
+
+.card__contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 10px;
+    padding: 10px 20px;
+}
+
+/* card */
+.card {
+    background: #1f1e1e;
+}
+
+.card__img {
+    width: 100%;
+    height: auto;
+}
+
+.card__titleRopa {
+    font-size: 1rem;
 }

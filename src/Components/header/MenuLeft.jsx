@@ -12,7 +12,7 @@ const MenuLeft = () => {
   const [open, setOpen] = useState(false);
   const productsList = ["Remeras", "Gorras"];
   return (
-    <div>
+    <>
       <IconButton>
         <MenuIcon variant="contained" onClick={() => setOpen(true)} />
       </IconButton>
@@ -31,7 +31,7 @@ const MenuLeft = () => {
           ))}
         </List>
       </Drawer>
-    </div>
+    </>
   );
 };
 
