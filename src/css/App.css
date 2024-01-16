@@ -58,6 +58,8 @@ header {
     grid-column-gap: 15px;
     grid-row-gap: 10px;
     padding: 10px 20px;
+    justify-content: center;
+    /* cambiar imagen, estilizar card y boton */
 }
 
 /* card */
