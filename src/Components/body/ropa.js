@@ -2,11 +2,11 @@ import hombreRemeraBlanco from '../../img/Remeras/hombre/HombreRemeraBlanco.JPG'
 import hombreRemeraVerde from '../../img/Remeras/hombre/HombreRemeraVerde.JPG'
 import hombreRemeraBordo from '../../img/Remeras/hombre/HombreRemeraBordo.JPG'
 import hombreRemeraNegro from '../../img/Remeras/hombre/HombreRemeraNegro.JPG'
-import hombreRemeraCeleste from '../../img/Remeras/hombre/HombreRemeraCeleste.JPG'
-import Gorra1 from '../../img/Gorras/gorra1.jpg'
-import Gorra2 from '../../img/Gorras/gorra2.jpg'
-import Gorra3 from '../../img/Gorras/gorra3.jpg'
-import Gorra4 from '../../img/Gorras/gorra4.jpg'
+// import hombreRemeraCeleste from '../../img/Remeras/hombre/HombreRemeraCeleste.JPG'
+// import Gorra1 from '../../img/Gorras/gorra1.jpg'
+// import Gorra2 from '../../img/Gorras/gorra2.jpg'
+// import Gorra3 from '../../img/Gorras/gorra3.jpg'
+// import Gorra4 from '../../img/Gorras/gorra4.jpg'
 
 const colors = {
     denim: {
@@ -48,27 +48,20 @@ const colors = {
 
 const indumentaria = [
     {
-        nameProduct: ['Remera Oversize'],
-        img: { remera1: hombreRemeraBlanco, remera2: hombreRemeraBordo, remera3: hombreRemeraCeleste, remera4: hombreRemeraNegro, remera5: hombreRemeraVerde },
+        nameProduct: 'Remera Oversize',
+        variant: [{ color: colors.emerald, img: hombreRemeraVerde }, { color: colors.black, img: hombreRemeraNegro }, { color: colors.white, img: hombreRemeraBlanco }, { color: colors.pink, img: hombreRemeraBordo }],
         size: ['sm', 'md', 'lg', 'xl'],
         price: 8000,
-        colors: [
-            colors.black,
-            colors.buttermilk,
-            colors.denim,
-            colors.emerald,
-            colors.pink,
-            colors.white,
-        ]
     },
     {
-        nameProduct: ['Gorra'],
-        img: {
-            gorra1: Gorra1,
-            gorra2: Gorra2,
-            gorra3: Gorra3,
-            gorra4: Gorra4,
-        },
+        nameProduct: 'Gorra',
+        // img: {
+        //     gorra1: Gorra1,
+        //     gorra2: Gorra2,
+        //     gorra3: Gorra3,
+        //     gorra4: Gorra4,
+        // },
+        img: { remera1: 'https://www.moov.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dw2fde12d3/products/NIDZ2875-010/NIDZ2875-010-1.JPG' },
         price: 6000
     }
 ]

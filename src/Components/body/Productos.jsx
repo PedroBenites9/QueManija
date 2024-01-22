@@ -6,13 +6,12 @@ import CardProduct from "./CardProduct";
 
 const Productos = () => {
   return (
-    <div className="card__contenedor">
-      {producto
-        .filter((e) => e.nameProduct === "Remera Oversize")
-        .map((e) => (
-          <CardProduct {...e} />
-        ))}
-    </div>
+    /**
+     ** Sera un contenedor de todos los productos a ofrecer,
+     ** solo es cuestion de crear una componente tipo 'Card' y colocar aqui
+     */
+
+    <></>
   );
 };
 
