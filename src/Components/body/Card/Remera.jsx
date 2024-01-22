@@ -4,23 +4,33 @@
  * * En esta Card de remera, va a tener un slider
  */
 
+import ropas from "../ropa";
 import React from "react";
 
 const Remera = () => {
+  const remera = ropas.find(encontrarRemeras);
+  function encontrarRemeras(remeras) {
+    return remeras.nameProduct === "Remera Oversize";
+  }
+
+  remera.variant.map((e) => console.log(e.img));
+
   return (
-    <div className="card">
-      {/* la imagen */}
+    <>
+      <div className="card">
+        {/* la imagen */}
+        <img src={remera.variant.map((e) => e.img)} alt="" srcset="" />
+        {/* Nombre de producto */}
 
-      {/* Nombre de producto */}
+        {/* precio */}
 
-      {/* precio */}
+        {/* colores */}
 
-      {/* colores */}
+        {/* talla */}
 
-      {/* talla */}
-
-      {/* boton de compra */}
-    </div>
+        {/* boton de compra */}
+      </div>
+    </>
   );
 };
 
