@@ -52,7 +52,9 @@ function Carousel() {
   };
 
   const leKey = () => {
-    return images.map((img) => img.title);
+    return images.map((img, i) => {
+      return i;
+    });
   };
   return (
     <Box sx={{ maxWidth: "100%", flexGrow: 1 }} key={leKey()}>
