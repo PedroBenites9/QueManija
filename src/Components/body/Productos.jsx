@@ -1,5 +1,5 @@
 import React from "react";
-// import producto from "./ropa";
+import producto from "./ropa";
 // import Card from "./Card";
 // import CardProduct from "./CardProduct";
 import Remera from "./Card/Remera";
@@ -12,7 +12,7 @@ const Productos = () => {
      */
 
     <>
-      <Remera />
+      <Remera {...producto} />
     </>
   );
 };

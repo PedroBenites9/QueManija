@@ -4,30 +4,35 @@
  * * En esta Card de remera, va a tener un slider
  */
 
-import ropas from "../ropa";
 import React from "react";
+import { Carousel } from "react-responsive-carousel";
 
-const Remera = () => {
-  const remera = ropas.find(encontrarRemeras);
-  function encontrarRemeras(remeras) {
-    return remeras.nameProduct === "Remera Oversize";
-  }
+const Remera = (leRemera) => {
+  // name[0].img.map((e) => console.log(e));
 
-  remera.variant.map((e) => console.log(e.img));
+  const { category, name, price, img, size } = leRemera[0];
+
+  console.log(img);
 
   return (
     <>
       <div className="card">
         {/* la imagen */}
-        <img src={remera.variant.map((e) => e.img)} alt="" srcset="" />
+        <Carousel>
+          <div>
+            <img src={""} alt={""} />
+          </div>
+        </Carousel>
         {/* Nombre de producto */}
-
+        <h3>{name}</h3>
         {/* precio */}
-
+        <span>${price}</span>
         {/* colores */}
 
         {/* talla */}
-
+        {size.map((e) => (
+          <button>{e}</button>
+        ))}
         {/* boton de compra */}
       </div>
     </>
