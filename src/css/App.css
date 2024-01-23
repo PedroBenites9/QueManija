@@ -57,6 +57,9 @@ header {
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 15px;
     grid-row-gap: 10px;
+    padding: 10px 30px;
+    justify-content: center;
+
     padding: 10px 20px;
     justify-content: center;
     /* cambiar imagen, estilizar card y boton */
@@ -65,6 +68,8 @@ header {
 /* card */
 .card {
     background: #1f1e1e;
+    width: auto;
+    height: 100%;
 }
 
 .card__img {
@@ -74,4 +79,5 @@ header {
 
 .card__titleRopa {
     font-size: 1rem;
+    margin: 0 0 10px 0;
 }

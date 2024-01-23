@@ -11,7 +11,7 @@ import { autoPlay } from "react-swipeable-views-utils";
 import foto1 from "../../img/imgHombre3.JPG";
 import foto2 from "../../img/imgHombre.JPG";
 import foto3 from "../../img/imgHombre2.JPG";
-import foto4 from "../../img/imgMujer3.JPG";
+import foto4 from "../../img/Remeras/imgMujer3.JPG";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -52,7 +52,9 @@ function Carousel() {
   };
 
   const leKey = () => {
-    return images.map((img) => img.title);
+    return images.map((img, i) => {
+      return i;
+    });
   };
   return (
     <Box sx={{ maxWidth: "100%", flexGrow: 1 }} key={leKey()}>

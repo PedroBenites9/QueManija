@@ -15,7 +15,7 @@ const Body = () => {
             padding: "5px 0 5px 0",
           }}
         >
-          Envios superiores a $300000, envio gratis
+          Envios superiores a $30000, envio gratis
         </Typography>
       </div>
       <Productos />
