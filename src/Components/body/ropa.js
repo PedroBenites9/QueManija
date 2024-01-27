@@ -1,4 +1,4 @@
-// import hombreRemeraBlanco from "../../img/Remeras/hombre/HombreRemeraBlanco.JPG";
+import hombreRemeraBlanco from "../../img/Remeras/hombre/HombreRemeraBlanco.JPG";
 // import hombreRemeraVerde from "../../img/Remeras/hombre/HombreRemeraVerde.JPG";
 // import hombreRemeraBordo from "../../img/Remeras/hombre/HombreRemeraBordo.JPG";
 // import hombreRemeraNegro from "../../img/Remeras/hombre/HombreRemeraNegro.JPG";
@@ -57,7 +57,7 @@ const indumentaria = [
     {
         name: "Remera Oversize",
         category: 'Remera',
-        img: ['https://postimg.cc/R3j79dfv][img]https://i.postimg.cc/R3j79dfv/Hombre-Remera-Blanco.jpg', 'https://postimg.cc/QHbJ5pLq][img]https://i.postimg.cc/QHbJ5pLq/Hombre-Remera-Bordo.jpg', 'https://postimg.cc/2qqQPM1H][img]https://i.postimg.cc/2qqQPM1H/Hombre-Remera-Celeste.jpg', 'https://postimg.cc/LJ8BVn2F][img]https://i.postimg.cc/LJ8BVn2F/Hombre-Remera-Negro.jpg'],
+        img: [`${hombreRemeraBlanco}`, `${hombreRemeraBlanco}`, 'https://i.postimg.cc/2qqQPM1H/Hombre-Remera-Celeste.jpg', 'https://i.postimg.cc/LJ8BVn2F/Hombre-Remera-Negro.jpg'],
         size: ['sm', 'md', 'lg', 'xlg'],
         colors: [colors.pink, colors.denim, colors.buttermilk],
         price: 6000
@@ -72,13 +72,15 @@ const indumentaria = [
     {
         name: 'Remera Oversize',
         category: 'Remera',
+        size: ['sm', 'md', 'lg', 'xlg'],
         variant: [{
             color: colors.black,
-            img: ['https://postimg.cc/LJ8BVn2F][img]https://i.postimg.cc/LJ8BVn2F/Hombre-Remera-Negro.jpg']
+            img: ['https://i.postimg.cc/LJ8BVn2F/Hombre-Remera-Negro.jpg']
         }, {
             color: colors.emerald,
-            img: ['']
+            img: ['https://i.postimg.cc/R3j79dfv/Hombre-Remera-Blanco.jpg']
         }],
+        price: 6000,
     }
 ];
 

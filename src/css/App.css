@@ -65,15 +65,11 @@ header {
     /* cambiar imagen, estilizar card y boton */
 }
 
+
 /* card */
 .card {
     background: #1f1e1e;
-    width: auto;
-    height: 100%;
-}
-
-.card__img {
-    width: 100%;
+    width: 50vw;
     height: auto;
 }
 
@@ -81,3 +77,12 @@ header {
     font-size: 1rem;
     margin: 0 0 10px 0;
 }
+
+/* carousel Card*/
+
+.card__carousel-img {
+    width: 100vw;
+    height: 30vh;
+}
+
+/* fin Card */

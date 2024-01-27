@@ -6,24 +6,30 @@
 
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "../../../css/App.css";
 
 const Remera = (leRemera) => {
-  // name[0].img.map((e) => console.log(e));
-
-  const { category, name, price, img, size } = leRemera[0];
-
-  console.log(img);
+  const { name, price, img, size, variant } = leRemera[2];
+  // {variant.map((e) =>
+  //   e.img.map((imag) => <img src={imag} alt={name} />)
+  // )}
 
   return (
     <>
       <div className="card">
         {/* la imagen */}
-        <Carousel>
-          <div>
-            <img src={""} alt={""} />
-          </div>
+        <Carousel showArrows={true} autoPlay={true}>
+          {variant.map((e, id) => (
+            <>
+              <div style={{ backgroundColor: "red" }}>
+                <img className="card__carousel-img" src={e.img} alt={name} />
+              </div>
+            </>
+          ))}
         </Carousel>
-        {/* Nombre de producto */}
+
+        {/*  Nombre de producto */}
         <h3>{name}</h3>
         {/* precio */}
         <span>${price}</span>
