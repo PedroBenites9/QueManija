@@ -1,7 +1,7 @@
 import hombreRemeraBlanco from "../../img/Remeras/hombre/HombreRemeraBlanco.JPG";
-// import hombreRemeraVerde from "../../img/Remeras/hombre/HombreRemeraVerde.JPG";
-// import hombreRemeraBordo from "../../img/Remeras/hombre/HombreRemeraBordo.JPG";
-// import hombreRemeraNegro from "../../img/Remeras/hombre/HombreRemeraNegro.JPG";
+import hombreRemeraVerde from "../../img/Remeras/hombre/HombreRemeraVerde.JPG";
+import hombreRemeraBordo from "../../img/Remeras/hombre/HombreRemeraBordo.JPG";
+import hombreRemeraNegro from "../../img/Remeras/hombre/HombreRemeraNegro.JPG";
 // import hombreRemeraCeleste from '../../img/Remeras/hombre/HombreRemeraCeleste.JPG'
 // import Gorra1 from '../../img/Gorras/gorra1.jpg'
 // import Gorra2 from '../../img/Gorras/gorra2.jpg'
@@ -32,7 +32,7 @@ const colors = {
     black: {
         name: "Black",
         id: "black",
-        hex: "#000000",
+        hex: "#0000",
     },
     emerald: {
         name: "Emerald",
@@ -57,7 +57,7 @@ const indumentaria = [
     {
         name: "Remera Oversize",
         category: 'Remera',
-        img: [`${hombreRemeraBlanco}`, `${hombreRemeraBlanco}`, 'https://i.postimg.cc/2qqQPM1H/Hombre-Remera-Celeste.jpg', 'https://i.postimg.cc/LJ8BVn2F/Hombre-Remera-Negro.jpg'],
+        img: [`${hombreRemeraBlanco}`, `${hombreRemeraVerde}`, 'https://i.postimg.cc/2qqQPM1H/Hombre-Remera-Celeste.jpg', 'https://i.postimg.cc/LJ8BVn2F/Hombre-Remera-Negro.jpg'],
         size: ['sm', 'md', 'lg', 'xlg'],
         colors: [colors.pink, colors.denim, colors.buttermilk],
         price: 6000
@@ -75,10 +75,13 @@ const indumentaria = [
         size: ['sm', 'md', 'lg', 'xlg'],
         variant: [{
             color: colors.black,
-            img: ['https://i.postimg.cc/LJ8BVn2F/Hombre-Remera-Negro.jpg']
+            img: [hombreRemeraNegro],
+        }, {
+            color: colors.pink,
+            img: [hombreRemeraBordo],
         }, {
             color: colors.emerald,
-            img: ['https://i.postimg.cc/R3j79dfv/Hombre-Remera-Blanco.jpg']
+            img: [hombreRemeraVerde],
         }],
         price: 6000,
     }
