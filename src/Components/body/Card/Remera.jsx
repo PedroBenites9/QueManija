@@ -14,8 +14,33 @@ import "../../../css/App.css";
 const Remera = (leRemera) => {
   const { name, price, category, variant } = leRemera[2];
   const color = variant.map((e) => e.color.hex);
-  console.log(color);
-  const [colores, setColores] = useState(color[1]);
+  const imagesRopa = variant.map((e) => e.img);
+  const [colores, setColores] = useState(color[0]);
+  const [images, setImages] = useState(imagesRopa[0]);
+
+  // console.log(colores);
+  // images.map((e) => console.log(e));
+  const ImgCard = () => {
+    return (
+      <>
+        {variant.map((e, id) => (
+          <>
+            {e.img.map((e) => console.log(e))}
+            <div>
+              {/* !*hacer filtrado de imagenes segun el color */}
+              {e.color.hex === colores ? (
+                <img
+                  className="card__carousel-img"
+                  src={e.img.map((e) => e)}
+                  alt={name}
+                />
+              ) : null}
+            </div>
+          </>
+        ))}
+      </>
+    );
+  };
 
   return (
     <>
@@ -27,14 +52,7 @@ const Remera = (leRemera) => {
           showThumbs={false}
           showArrows={false}
         >
-          {variant.map((e, id) => (
-            <>
-              <div>
-                {/* hacer filtrado de imagenes segun el color */}
-                <img className="card__carousel-img" src={e.img} alt={name} />
-              </div>
-            </>
-          ))}
+          <ImgCard />
         </Carousel>
         <div className="card__content">
           {/*  Nombre de producto */}

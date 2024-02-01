@@ -2,6 +2,8 @@ import hombreRemeraBlanco from "../../img/Remeras/hombre/HombreRemeraBlanco.JPG"
 import hombreRemeraVerde from "../../img/Remeras/hombre/HombreRemeraVerde.JPG";
 import hombreRemeraBordo from "../../img/Remeras/hombre/HombreRemeraBordo.JPG";
 import hombreRemeraNegro from "../../img/Remeras/hombre/HombreRemeraNegro.JPG";
+import hombreRemeraNegro2 from "../../img/Remeras/hombre/HombreRemeraNegro2.JPG";
+import hombreRemeraNegro3 from "../../img/Remeras/hombre/HombreRemeraNegro3.JPG";
 // import hombreRemeraCeleste from '../../img/Remeras/hombre/HombreRemeraCeleste.JPG'
 // import Gorra1 from '../../img/Gorras/gorra1.jpg'
 // import Gorra2 from '../../img/Gorras/gorra2.jpg'
@@ -75,7 +77,7 @@ const indumentaria = [
         size: ['sm', 'md', 'lg', 'xlg'],
         variant: [{
             color: colors.black,
-            img: [hombreRemeraNegro],
+            img: [hombreRemeraNegro, hombreRemeraNegro2, hombreRemeraNegro3],
         }, {
             color: colors.pink,
             img: [hombreRemeraBordo],

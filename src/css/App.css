@@ -55,26 +55,14 @@ header {
 
 .contenedor__card {
     padding: 5vw;
-}
-
-.card__contenedor {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 15px;
-    grid-row-gap: 10px;
-    padding: 10px 30px;
+    display: flex;
     justify-content: center;
-    padding: 10px 20px;
-    justify-content: center;
-    /* cambiar imagen, estilizar card y boton */
 }
-
 
 /* card */
 .card {
     background: #1f1e1e;
-    width: 100%;
+    width: 90%;
     height: auto;
 }
 
@@ -117,6 +105,7 @@ header {
     filter: opacity(30%);
     display: flex;
     align-items: center;
+    transition: .3s ease 0s
 }
 
 .active {
