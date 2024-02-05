@@ -4,7 +4,7 @@
  * * En esta Card de remera, va a tener un slider
  */
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { FaCheck } from "react-icons/fa";
@@ -12,29 +12,31 @@ import { FaCheck } from "react-icons/fa";
 import "../../../css/App.css";
 
 const Remera = (leRemera) => {
-  const { name, price, category, variant } = leRemera[2];
+  const { name, price, category, variant } = leRemera[0];
   const color = variant.map((e) => e.color.hex);
-  const imagesRopa = variant.map((e) => e.img);
-  const [colores, setColores] = useState(color[0]);
-  const [images, setImages] = useState(imagesRopa[0]);
+
+  const [colores, setColores] = useState(color[0]); // asignarle color al boton y luego
 
   // console.log(colores);
   // images.map((e) => console.log(e));
+
   const ImgCard = () => {
     return (
       <>
         {variant.map((e, id) => (
           <>
-            {e.img.map((e) => console.log(e))}
             <div>
               {/* !*hacer filtrado de imagenes segun el color */}
-              {e.color.hex === colores ? (
-                <img
-                  className="card__carousel-img"
-                  src={e.img.map((e) => e)}
-                  alt={name}
-                />
-              ) : null}
+              {/** hacer que las img no se stakeen */}
+              {e.color.hex === colores
+                ? e.img.map((leImg) => (
+                    <img
+                      className="card__carousel-img"
+                      src={leImg}
+                      alt={name}
+                    />
+                  ))
+                : null}
             </div>
           </>
         ))}
