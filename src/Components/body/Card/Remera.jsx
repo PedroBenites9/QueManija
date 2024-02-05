@@ -18,8 +18,7 @@ const Remera = (leRemera) => {
   const [colores, setColores] = useState(color[0]);
   const [images, setImages] = useState(imagesRopa[0]);
 
-  // console.log(colores);
-  // images.map((e) => console.log(e));
+  images.map((e) => console.log(e));
   const ImgCard = () => {
     return (
       <>
@@ -27,11 +26,11 @@ const Remera = (leRemera) => {
           <>
             {e.img.map((e) => console.log(e))}
             <div>
-              {/* !*hacer filtrado de imagenes segun el color */}
+              {e.img.map((pitor2) => console.log(pitor2))}
               {e.color.hex === colores ? (
                 <img
                   className="card__carousel-img"
-                  src={e.img.map((e) => e)}
+                  src={e.img.map((pitor) => pitor)}
                   alt={name}
                 />
               ) : null}
