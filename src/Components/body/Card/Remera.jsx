@@ -12,29 +12,22 @@ import { FaCheck } from "react-icons/fa";
 import "../../../css/App.css";
 
 const Remera = (leRemera) => {
-  const { name, price, category, variant } = leRemera[2];
+  const { name, price, category, variant } = leRemera[0];
   const color = variant.map((e) => e.color.hex);
-  const imagesRopa = variant.map((e) => e.img);
-  const [colores, setColores] = useState(color[0]);
-  const [images, setImages] = useState(imagesRopa[0]);
 
-  images.map((e) => console.log(e));
-  const ImgCard = () => {
+  const [colores, setColores] = useState(color[0]); // asignarle color al boton y luego
+
+  // console.log(colores);
+  // images.map((e) => console.log(e));
+
+  const ImgCard = ({ urlImg }) => {
     return (
       <>
-        {variant.map((e, id) => (
+        {variant.map((e) => (
           <>
-            {e.img.map((e) => console.log(e))}
-            <div>
-              {e.img.map((pitor2) => console.log(pitor2))}
-              {e.color.hex === colores ? (
-                <img
-                  className="card__carousel-img"
-                  src={e.img.map((pitor) => pitor)}
-                  alt={name}
-                />
-              ) : null}
-            </div>
+            {e.color.hex === colores ? (
+              <img className="card__carousel" src={urlImg} alt={name} />
+            ) : null}
           </>
         ))}
       </>
@@ -51,7 +44,14 @@ const Remera = (leRemera) => {
           showThumbs={false}
           showArrows={false}
         >
-          <ImgCard />
+          {variant.map((e) =>
+            // hacer un filtrado
+            e.img.map((pathImg, id) => (
+              <div key={id}>
+                <ImgCard urlImg={pathImg} />
+              </div>
+            ))
+          )}
         </Carousel>
         <div className="card__content">
           {/*  Nombre de producto */}

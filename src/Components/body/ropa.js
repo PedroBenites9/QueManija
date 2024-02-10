@@ -1,6 +1,10 @@
 import hombreRemeraBlanco from "../../img/Remeras/hombre/HombreRemeraBlanco.JPG";
 import hombreRemeraVerde from "../../img/Remeras/hombre/HombreRemeraVerde.JPG";
+import hombreRemeraVerde2 from "../../img/Remeras/hombre/HombreRemeraVerde2.JPG";
+import hombreRemeraVerde3 from "../../img/Remeras/hombre/HombreRemeraVerde3.JPG";
 import hombreRemeraBordo from "../../img/Remeras/hombre/HombreRemeraBordo.JPG";
+import hombreRemeraBordo2 from "../../img/Remeras/hombre/HombreRemeraBordo2.JPG";
+import hombreRemeraBordo3 from "../../img/Remeras/hombre/HombreRemeraBordo3.JPG";
 import hombreRemeraNegro from "../../img/Remeras/hombre/HombreRemeraNegro.JPG";
 import hombreRemeraNegro2 from "../../img/Remeras/hombre/HombreRemeraNegro2.JPG";
 import hombreRemeraNegro3 from "../../img/Remeras/hombre/HombreRemeraNegro3.JPG";
@@ -57,21 +61,6 @@ const indumentaria = [
      *! importar imagenes al host de img 'postimage'
      */
     {
-        name: "Remera Oversize",
-        category: 'Remera',
-        img: [`${hombreRemeraBlanco}`, `${hombreRemeraVerde}`, 'https://i.postimg.cc/2qqQPM1H/Hombre-Remera-Celeste.jpg', 'https://i.postimg.cc/LJ8BVn2F/Hombre-Remera-Negro.jpg'],
-        size: ['sm', 'md', 'lg', 'xlg'],
-        colors: [colors.pink, colors.denim, colors.buttermilk],
-        price: 6000
-    },
-    {
-        name: "Gorra",
-        category: 'Gorra',
-        img: ['Gurl1', 'Gurl2', 'Gurl3'],
-        colors: [colors.denim, colors.buttermilk],
-        price: 4000
-    },
-    {
         name: 'Remera Oversize',
         category: 'Remera',
         size: ['sm', 'md', 'lg', 'xlg'],
@@ -80,7 +69,7 @@ const indumentaria = [
             img: [hombreRemeraNegro, hombreRemeraNegro2, hombreRemeraNegro3],
         }, {
             color: colors.pink,
-            img: [hombreRemeraBordo],
+            img: [hombreRemeraBordo, hombreRemeraBordo2],
         }, {
             color: colors.emerald,
             img: [hombreRemeraVerde],
