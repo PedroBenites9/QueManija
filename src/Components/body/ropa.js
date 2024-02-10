@@ -69,7 +69,7 @@ const indumentaria = [
             img: [hombreRemeraNegro, hombreRemeraNegro2, hombreRemeraNegro3],
         }, {
             color: colors.pink,
-            img: [hombreRemeraBordo],
+            img: [hombreRemeraBordo, hombreRemeraBordo2],
         }, {
             color: colors.emerald,
             img: [hombreRemeraVerde],

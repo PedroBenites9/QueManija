@@ -4,7 +4,7 @@
  * * En esta Card de remera, va a tener un slider
  */
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { FaCheck } from "react-icons/fa";
@@ -20,24 +20,14 @@ const Remera = (leRemera) => {
   // console.log(colores);
   // images.map((e) => console.log(e));
 
-  const ImgCard = () => {
+  const ImgCard = ({ urlImg }) => {
     return (
       <>
-        {variant.map((e, id) => (
+        {variant.map((e) => (
           <>
-            <div>
-              {/* !*hacer filtrado de imagenes segun el color */}
-              {/** hacer que las img no se stakeen */}
-              {e.color.hex === colores
-                ? e.img.map((leImg) => (
-                    <img
-                      className="card__carousel-img"
-                      src={leImg}
-                      alt={name}
-                    />
-                  ))
-                : null}
-            </div>
+            {e.color.hex === colores ? (
+              <img className="card__carousel" src={urlImg} alt={name} />
+            ) : null}
           </>
         ))}
       </>
@@ -54,7 +44,14 @@ const Remera = (leRemera) => {
           showThumbs={false}
           showArrows={false}
         >
-          <ImgCard />
+          {variant.map((e) =>
+            // hacer un filtrado
+            e.img.map((pathImg, id) => (
+              <div key={id}>
+                <ImgCard urlImg={pathImg} />
+              </div>
+            ))
+          )}
         </Carousel>
         <div className="card__content">
           {/*  Nombre de producto */}
