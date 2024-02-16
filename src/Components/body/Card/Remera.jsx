@@ -17,9 +17,6 @@ const Remera = (leRemera) => {
 
   const [colores, setColores] = useState(color[0]); // asignarle color al boton y luego
 
-  // console.log(colores);
-  // images.map((e) => console.log(e));
-
   const ImgCard = ({ urlImg }) => {
     return (
       <>
@@ -36,6 +33,8 @@ const Remera = (leRemera) => {
     <>
       <div className="card">
         {/* la imagen */}
+
+        <h3 className="none">Hola soy un h3</h3>
         <Carousel
           infiniteLoop={true}
           showStatus={false}
