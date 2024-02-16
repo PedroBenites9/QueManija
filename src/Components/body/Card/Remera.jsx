@@ -22,6 +22,7 @@ const Remera = (leRemera) => {
       <>
         {variant.map((e) => (
           <>
+            {/** img */}
             <img src={urlImg} alt={name} />
           </>
         ))}
