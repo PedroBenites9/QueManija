@@ -102,8 +102,9 @@ header {
     object-position: 100% 10%
 }
 
-.img_carousel {
-    display: flex;
+.card__carousel {
+    width: 50%;
+    height: auto;
 }
 
 /* style button */

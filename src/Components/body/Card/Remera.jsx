@@ -25,9 +25,7 @@ const Remera = (leRemera) => {
       <>
         {variant.map((e) => (
           <>
-            {e.color.hex === colores ? (
-              <img className="card__carousel" src={urlImg} alt={name} />
-            ) : null}
+            <img src={urlImg} alt={name} />
           </>
         ))}
       </>
@@ -46,11 +44,13 @@ const Remera = (leRemera) => {
         >
           {variant.map((e) =>
             // hacer un filtrado
-            e.img.map((pathImg, id) => (
-              <div key={id}>
-                <ImgCard urlImg={pathImg} />
-              </div>
-            ))
+            e.color.hex === colores
+              ? e.img.map((pathImg, id) => (
+                  <div className="card__carousel-img" key={id}>
+                    <ImgCard urlImg={pathImg} />
+                  </div>
+                ))
+              : undefined
           )}
         </Carousel>
         <div className="card__content">
