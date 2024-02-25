@@ -107,6 +107,54 @@ header {
     height: auto;
 }
 
+/* carousel2 */
+
+#gallery {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.gallery-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.gallery-item img {
+    width: 200px;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Navegación del Slider */
+.gallery-navigation {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -50px;
+}
+
+.nav-button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nav-button:hover {
+    background-color: #005f5f;
+}
+
 /* style button */
 .btn {
     width: 25px;
