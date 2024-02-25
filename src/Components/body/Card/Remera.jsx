@@ -4,28 +4,56 @@
  * * En esta Card de remera, va a tener un slider
  */
 
-import React, { useState } from "react";
-import { Carousel } from "react-responsive-carousel";
+import React, { useEffect, useState } from "react";
+// import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { FaCheck } from "react-icons/fa";
+import Slider from "react-slick";
 
+//import estilos
 import "../../../css/App.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Remera = (leRemera) => {
   const { name, price, category, variant } = leRemera[0];
   const color = variant.map((e) => e.color.hex);
 
-  const [colores, setColores] = useState(color[0]); // asignarle color al boton y luego
+  const [colores, setColores] = useState(color[0]);
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
 
   const ImgCard = ({ urlImg }) => {
     return (
       <>
-        {variant.map((e) => (
-          <>
-            {/** img */}
-            <img src={urlImg} alt={name} />
-          </>
-        ))}
+        <>
+          {/** img */}
+          <img className="card__carousel-img" src={urlImg} alt={name} />
+        </>
+      </>
+    );
+  };
+
+  const Carousel = () => {
+    return (
+      <>
+        <Slider {...settings}>
+          {variant.map((e) =>
+            e.color.hex === colores
+              ? e.img.map((pathImg) => (
+                  <div className="card__carousel">
+                    <ImgCard urlImg={pathImg} />
+                  </div>
+                ))
+              : null
+          )}
+        </Slider>
       </>
     );
   };
@@ -33,26 +61,9 @@ const Remera = (leRemera) => {
   return (
     <>
       <div className="card">
-        {/* la imagen */}
-
-        <h3 className="none">Hola soy un h3</h3>
-        <Carousel
-          infiniteLoop={true}
-          showStatus={false}
-          showThumbs={false}
-          showArrows={false}
-        >
-          {variant.map((e) =>
-            // hacer un filtrado
-            e.color.hex === colores
-              ? e.img.map((pathImg, id) => (
-                  <div className="card__carousel-img" key={id}>
-                    <ImgCard urlImg={pathImg} />
-                  </div>
-                ))
-              : undefined
-          )}
-        </Carousel>
+        {/*Card Carousel*/}
+        <Carousel />
+        {/* Data Carousel */}
         <div className="card__content">
           {/*  Nombre de producto */}
           <h3 className="card__title">{name}</h3>
