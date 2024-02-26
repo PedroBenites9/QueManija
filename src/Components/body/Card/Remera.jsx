@@ -4,9 +4,8 @@
  * * En esta Card de remera, va a tener un slider
  */
 
-import React, { useEffect, useState } from "react";
-// import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+//import librerias
+import React, { useState } from "react";
 import { FaCheck } from "react-icons/fa";
 import Slider from "react-slick";
 
@@ -21,9 +20,11 @@ const Remera = (leRemera) => {
 
   const [colores, setColores] = useState(color[0]);
 
+  // Settings para personalizar el carousel
   const settings = {
     dots: true,
     infinite: true,
+    fade: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -32,17 +33,8 @@ const Remera = (leRemera) => {
   const ImgCard = ({ urlImg }) => {
     return (
       <>
-<<<<<<< HEAD
-        {variant.map((e) => (
-          <>
-            {e.color.hex === colores ? <img src={urlImg} alt={name} /> : null}
-          </>
-        ))}
-=======
-        <>
-          {/** img */}
-          <img className="card__carousel-img" src={urlImg} alt={name} />
-        </>
+        {/** img */}
+        <img className="card__carousel-img" src={urlImg} alt={name} />
       </>
     );
   };
@@ -53,48 +45,24 @@ const Remera = (leRemera) => {
         <Slider {...settings}>
           {variant.map((e) =>
             e.color.hex === colores
-              ? e.img.map((pathImg) => (
-                  <div className="card__carousel">
+              ? e.img.map((pathImg, id) => (
+                  <div id={id} className="card__carousel">
                     <ImgCard urlImg={pathImg} />
                   </div>
                 ))
               : null
           )}
         </Slider>
->>>>>>> pc
       </>
     );
   };
-
+  // return
   return (
     <>
       <div className="card">
-<<<<<<< HEAD
-        {/* la imagen */}
-        <Carousel
-          infiniteLoop={true}
-          showStatus={false}
-          showThumbs={false}
-          showArrows={false}
-        >
-          {variant.map((e) =>
-            // hacer un filtrado
-            e.color.hex === colores ? (
-              e.img.map((pathImg, id) => (
-                <div key={id}>
-                  <ImgCard urlImg={pathImg} />
-                </div>
-              ))
-            ) : (
-              <h3>un h3</h3>
-            )
-          )}
-        </Carousel>
-=======
         {/*Card Carousel*/}
         <Carousel />
         {/* Data Carousel */}
->>>>>>> pc
         <div className="card__content">
           {/*  Nombre de producto */}
           <h3 className="card__title">{name}</h3>
