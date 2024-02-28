@@ -16,6 +16,9 @@ const Footer = () => {
         <FacebookIcon className="redesSociales" />
         <InstagramIcon className="redesSociales" />
         <WhatsAppIcon className="redesSociales" />
+        {/*
+         *! hacer clickeable el foooter, agregar listas y sector de tarjetas
+         */}
       </div>
     </footer>
   );
