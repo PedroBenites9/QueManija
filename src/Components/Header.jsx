@@ -3,7 +3,11 @@ import React from "react";
 import NavBar from "./header/NavBar";
 
 const Header = () => {
-  return <NavBar />;
+  return (
+    <header>
+      <NavBar />
+    </header>
+  );
 };
 
 export default Header;
