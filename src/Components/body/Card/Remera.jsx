@@ -4,20 +4,36 @@
  * * En esta Card de remera, va a tener un slider
  */
 
-import React, { useState } from "react";
-import { Carousel } from "react-responsive-carousel";
+import React, { useEffect, useState } from "react";
+// import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { FaCheck } from "react-icons/fa";
+import Slider from "react-slick";
 
+//import estilos
 import "../../../css/App.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Remera = (leRemera) => {
   const { name, price, category, variant } = leRemera[0];
   const color = variant.map((e) => e.color.hex);
   const [colores, setColores] = useState(color[0]);
 
+<<<<<<< HEAD
   const hasChild =
     document.getElementsByClassName(".parent").hasChildNodes === false;
+=======
+  const [colores, setColores] = useState(color[0]);
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+>>>>>>> cb33ecaf3c55389a874943ea2589a120adc11b7e
 
   const removeLiEmpty = () => {
     if (hasChild) {
@@ -29,12 +45,28 @@ const Remera = (leRemera) => {
   const ImgCard = ({ urlImg }) => {
     return (
       <>
-        {variant.map((e) => (
-          <>
-            {/** img */}
-            <img src={urlImg} alt={name} />
-          </>
-        ))}
+        <>
+          {/** img */}
+          <img className="card__carousel-img" src={urlImg} alt={name} />
+        </>
+      </>
+    );
+  };
+
+  const Carousel = () => {
+    return (
+      <>
+        <Slider {...settings}>
+          {variant.map((e) =>
+            e.color.hex === colores
+              ? e.img.map((pathImg) => (
+                  <div className="card__carousel">
+                    <ImgCard urlImg={pathImg} />
+                  </div>
+                ))
+              : null
+          )}
+        </Slider>
       </>
     );
   };
@@ -42,6 +74,7 @@ const Remera = (leRemera) => {
   return (
     <>
       <div className="card">
+<<<<<<< HEAD
         {/* la imagen */}
 
         <Carousel
@@ -62,6 +95,11 @@ const Remera = (leRemera) => {
               : removeLiEmpty()
           )}
         </Carousel>
+=======
+        {/*Card Carousel*/}
+        <Carousel />
+        {/* Data Carousel */}
+>>>>>>> cb33ecaf3c55389a874943ea2589a120adc11b7e
         <div className="card__content">
           {/*  Nombre de producto */}
           <h3 className="card__title">{name}</h3>

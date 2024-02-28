@@ -1,10 +1,10 @@
-import hombreRemeraBlanco from "../../img/Remeras/hombre/HombreRemeraBlanco.JPG";
+// import hombreRemeraBlanco from "../../img/Remeras/hombre/HombreRemeraBlanco.JPG";
 import hombreRemeraVerde from "../../img/Remeras/hombre/HombreRemeraVerde.JPG";
 import hombreRemeraVerde2 from "../../img/Remeras/hombre/HombreRemeraVerde2.JPG";
 import hombreRemeraVerde3 from "../../img/Remeras/hombre/HombreRemeraVerde3.JPG";
 import hombreRemeraBordo from "../../img/Remeras/hombre/HombreRemeraBordo.JPG";
 import hombreRemeraBordo2 from "../../img/Remeras/hombre/HombreRemeraBordo2.JPG";
-import hombreRemeraBordo3 from "../../img/Remeras/hombre/HombreRemeraBordo3.JPG";
+// import hombreRemeraBordo3 from "../../img/Remeras/hombre/HombreRemeraBordo3.JPG";
 import hombreRemeraNegro from "../../img/Remeras/hombre/HombreRemeraNegro.JPG";
 import hombreRemeraNegro2 from "../../img/Remeras/hombre/HombreRemeraNegro2.JPG";
 import hombreRemeraNegro3 from "../../img/Remeras/hombre/HombreRemeraNegro3.JPG";
@@ -72,7 +72,7 @@ const indumentaria = [
             img: [hombreRemeraBordo, hombreRemeraBordo2],
         }, {
             color: colors.emerald,
-            img: [hombreRemeraVerde],
+            img: [hombreRemeraVerde, hombreRemeraVerde2, hombreRemeraVerde3],
         }],
         price: 6000,
     }
