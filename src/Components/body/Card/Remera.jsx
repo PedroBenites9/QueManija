@@ -14,9 +14,18 @@ import "../../../css/App.css";
 const Remera = (leRemera) => {
   const { name, price, category, variant } = leRemera[0];
   const color = variant.map((e) => e.color.hex);
+  const [colores, setColores] = useState(color[0]);
 
-  const [colores, setColores] = useState(color[0]); // asignarle color al boton y luego
+  const hasChild =
+    document.getElementsByClassName(".parent").hasChildNodes === false;
 
+  const removeLiEmpty = () => {
+    if (hasChild) {
+      console.log("nothing");
+    } else {
+      console.log("tiene algo");
+    }
+  };
   const ImgCard = ({ urlImg }) => {
     return (
       <>
@@ -35,12 +44,12 @@ const Remera = (leRemera) => {
       <div className="card">
         {/* la imagen */}
 
-        <h3 className="none">Hola soy un h3</h3>
         <Carousel
           infiniteLoop={true}
           showStatus={false}
           showThumbs={false}
           showArrows={false}
+          className="parent"
         >
           {variant.map((e) =>
             // hacer un filtrado
@@ -50,7 +59,7 @@ const Remera = (leRemera) => {
                     <ImgCard urlImg={pathImg} />
                   </div>
                 ))
-              : undefined
+              : removeLiEmpty()
           )}
         </Carousel>
         <div className="card__content">
