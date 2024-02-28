@@ -5,7 +5,7 @@
  */
 
 //import librerias
-import React, { useState } from "react";
+import React from "react";
 import Slider from "react-slick";
 
 //import estilos
@@ -15,9 +15,6 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Gorras = (leRemera) => {
   const { name, price, data } = leRemera[1];
-  const nameGorra = data.map((e) => e.nameProd);
-
-  const [nameProduct, setNameProduct] = useState(nameGorra[0]);
 
   // Settings para personalizar el carousel
   const settings = {

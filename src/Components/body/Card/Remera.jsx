@@ -4,8 +4,9 @@
  * * En esta Card de remera, va a tener un slider
  */
 
-//import librerias
 import React, { useState } from "react";
+// import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { FaCheck } from "react-icons/fa";
 import Slider from "react-slick";
 
@@ -17,40 +18,25 @@ import "slick-carousel/slick/slick-theme.css";
 const Remera = (leRemera) => {
   const { name, price, variant } = leRemera[0];
   const color = variant.map((e) => e.color.hex);
-<<<<<<< HEAD
-  const [colores, setColores] = useState(color[0]);
-
-<<<<<<< HEAD
-  const hasChild =
-    document.getElementsByClassName(".parent").hasChildNodes === false;
-=======
-=======
->>>>>>> notebook
   const [colores, setColores] = useState(color[0]);
 
   // Settings para personalizar el carousel
   const settings = {
     dots: true,
     infinite: true,
-    fade: true,
     speed: 500,
+    fade: true,
     slidesToShow: 1,
     slidesToScroll: 1,
   };
->>>>>>> cb33ecaf3c55389a874943ea2589a120adc11b7e
 
-  const removeLiEmpty = () => {
-    if (hasChild) {
-      console.log("nothing");
-    } else {
-      console.log("tiene algo");
-    }
-  };
   const ImgCard = ({ urlImg }) => {
     return (
       <>
-        {/** img */}
-        <img className="card__carousel-img" src={urlImg} alt={name} />
+        <>
+          {/** img */}
+          <img className="card__carousel-img" src={urlImg} alt={name} />
+        </>
       </>
     );
   };
@@ -61,8 +47,8 @@ const Remera = (leRemera) => {
         <Slider {...settings}>
           {variant.map((e) =>
             e.color.hex === colores
-              ? e.img.map((pathImg, id) => (
-                  <div id={id} className="card__carousel">
+              ? e.img.map((pathImg) => (
+                  <div className="card__carousel">
                     <ImgCard urlImg={pathImg} />
                   </div>
                 ))
@@ -72,44 +58,19 @@ const Remera = (leRemera) => {
       </>
     );
   };
-  // return
+
   return (
     <>
       <div className="card">
-<<<<<<< HEAD
-        {/* la imagen */}
-
-        <Carousel
-          infiniteLoop={true}
-          showStatus={false}
-          showThumbs={false}
-          showArrows={false}
-          className="parent"
-        >
-          {variant.map((e) =>
-            // hacer un filtrado
-            e.color.hex === colores
-              ? e.img.map((pathImg, id) => (
-                  <div className="card__carousel-img" key={id}>
-                    <ImgCard urlImg={pathImg} />
-                  </div>
-                ))
-              : removeLiEmpty()
-          )}
-        </Carousel>
-=======
         {/*Card Carousel*/}
         <Carousel />
         {/* Data Carousel */}
->>>>>>> cb33ecaf3c55389a874943ea2589a120adc11b7e
         <div className="card__content">
           {/*  Nombre de producto */}
           <h3 className="card__title">{name}</h3>
           {/* precio */}
           <span>${price}</span>
-          {/*
-           * agregar boton de compra */}
-
+          {/* boton de compra */}
           <div className="card__colors">
             {variant.map((e) => (
               <button
