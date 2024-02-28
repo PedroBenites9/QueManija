@@ -9,6 +9,7 @@ import {
   createTheme,
   useMediaQuery,
 } from "@mui/material";
+import Footer from "./Components/Footer";
 
 const App = () => {
   const darkModeToggle = useMediaQuery("(prefers-color-scheme: dark)");
@@ -28,6 +29,7 @@ const App = () => {
         <CssBaseline />
         <Header />
         <Body />
+        <Footer />
       </ThemeProvider>
     </>
   );

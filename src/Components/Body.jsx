@@ -2,6 +2,7 @@ import React from "react";
 import Carousel from "./body/Carousel";
 import { Typography } from "@mui/material";
 import Productos from "./body/Productos";
+import "../css/App.css";
 
 const Body = () => {
   return (

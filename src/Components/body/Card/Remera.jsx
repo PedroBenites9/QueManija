@@ -4,9 +4,8 @@
  * * En esta Card de remera, va a tener un slider
  */
 
-import React, { useEffect, useState } from "react";
-// import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+//import librerias
+import React, { useState } from "react";
 import { FaCheck } from "react-icons/fa";
 import Slider from "react-slick";
 
@@ -16,19 +15,24 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Remera = (leRemera) => {
-  const { name, price, category, variant } = leRemera[0];
+  const { name, price, variant } = leRemera[0];
   const color = variant.map((e) => e.color.hex);
+<<<<<<< HEAD
   const [colores, setColores] = useState(color[0]);
 
 <<<<<<< HEAD
   const hasChild =
     document.getElementsByClassName(".parent").hasChildNodes === false;
 =======
+=======
+>>>>>>> notebook
   const [colores, setColores] = useState(color[0]);
 
+  // Settings para personalizar el carousel
   const settings = {
     dots: true,
     infinite: true,
+    fade: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -45,10 +49,8 @@ const Remera = (leRemera) => {
   const ImgCard = ({ urlImg }) => {
     return (
       <>
-        <>
-          {/** img */}
-          <img className="card__carousel-img" src={urlImg} alt={name} />
-        </>
+        {/** img */}
+        <img className="card__carousel-img" src={urlImg} alt={name} />
       </>
     );
   };
@@ -59,8 +61,8 @@ const Remera = (leRemera) => {
         <Slider {...settings}>
           {variant.map((e) =>
             e.color.hex === colores
-              ? e.img.map((pathImg) => (
-                  <div className="card__carousel">
+              ? e.img.map((pathImg, id) => (
+                  <div id={id} className="card__carousel">
                     <ImgCard urlImg={pathImg} />
                   </div>
                 ))
@@ -70,7 +72,7 @@ const Remera = (leRemera) => {
       </>
     );
   };
-
+  // return
   return (
     <>
       <div className="card">
@@ -105,8 +107,9 @@ const Remera = (leRemera) => {
           <h3 className="card__title">{name}</h3>
           {/* precio */}
           <span>${price}</span>
-          <p>{category}</p>
-          {/* boton de compra */}
+          {/*
+           * agregar boton de compra */}
+
           <div className="card__colors">
             {variant.map((e) => (
               <button

@@ -56,21 +56,24 @@ header {
 
 /* fin header */
 
-/* *Body */
-
 /* cardGrid contenedor */
 
 .contenedor__card {
-    padding: 5vw;
     display: flex;
-    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+/* producto */
+.producto {
+    background: red;
 }
 
 /* card */
 .card {
     background: #1f1e1e;
-    width: 90%;
+    width: 80%;
     height: auto;
+    margin: 5% 10%;
 }
 
 .card__titleRopa {
@@ -107,53 +110,7 @@ header {
     height: auto;
 }
 
-/* carousel2 */
 
-#gallery {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-.gallery-container {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    margin: 0 auto;
-}
-
-.gallery-item {
-    min-width: 100%;
-    box-sizing: border-box;
-    margin: 0 auto;
-}
-
-.gallery-item img {
-    width: 200px;
-    display: block;
-    height: auto;
-    margin: 0 auto;
-}
-
-/* Navegación del Slider */
-.gallery-navigation {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    top: -50px;
-}
-
-.nav-button {
-    background-color: #008CBA;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.nav-button:hover {
-    background-color: #005f5f;
-}
 
 /* style button */
 .btn {
@@ -172,5 +129,17 @@ header {
     filter: opacity(100%);
 }
 
+.p__producto {
+    font-weight: bold;
+    text-align: center;
+}
 
 /* fin Card */
+
+/* inicio img body */
+
+.body__img {
+    object-fit: cover;
+    width: 100%;
+    height: 50%;
+}

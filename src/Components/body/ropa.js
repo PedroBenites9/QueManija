@@ -9,10 +9,10 @@ import hombreRemeraNegro from "../../img/Remeras/hombre/HombreRemeraNegro.JPG";
 import hombreRemeraNegro2 from "../../img/Remeras/hombre/HombreRemeraNegro2.JPG";
 import hombreRemeraNegro3 from "../../img/Remeras/hombre/HombreRemeraNegro3.JPG";
 // import hombreRemeraCeleste from '../../img/Remeras/hombre/HombreRemeraCeleste.JPG'
-// import Gorra1 from '../../img/Gorras/gorra1.jpg'
-// import Gorra2 from '../../img/Gorras/gorra2.jpg'
-// import Gorra3 from '../../img/Gorras/gorra3.jpg'
-// import Gorra4 from '../../img/Gorras/gorra4.jpg'
+import GorraVerde from '../../img/Gorras/gorra1.jpg'
+import GorraGris from '../../img/Gorras/gorra2.jpg'
+import GorraGrisNegro from '../../img/Gorras/gorra3.jpg'
+import GorraNegro from '../../img/Gorras/gorra4.jpg'
 
 const colors = {
     denim: {
@@ -75,7 +75,36 @@ const indumentaria = [
             img: [hombreRemeraVerde, hombreRemeraVerde2, hombreRemeraVerde3],
         }],
         price: 6000,
-    }
+    },
+    {
+        name: 'Gorras',
+        category: 'gorra',
+        data: [
+            {
+                id: 0,
+                nameProd: "Gorra gris",
+                img: GorraGris
+            },
+            {
+                id: 1,
+                nameProd: "Gorra gris-negro",
+                img: GorraGrisNegro
+            },
+            {
+                id: 2,
+                nameProd: "Gorra negro",
+                img: GorraNegro
+            },
+
+            {
+                id: 3,
+                nameProd: "Gorra verde",
+                img: GorraVerde
+            },
+        ],
+        price: 4000,
+    },
+
 ];
 
 export default indumentaria;
