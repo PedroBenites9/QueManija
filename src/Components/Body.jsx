@@ -4,8 +4,6 @@ import { Typography } from "@mui/material";
 import Productos from "./body/Productos";
 import "../css/App.css";
 
-import fotoBody from "../img/imgHombre.JPG";
-
 const Body = () => {
   return (
     <div>
@@ -22,7 +20,6 @@ const Body = () => {
         </Typography>
       </div>
       <Productos />
-      <img className="body__img" src={fotoBody} alt="foto hombre" srcset="" />
     </div>
   );
 };

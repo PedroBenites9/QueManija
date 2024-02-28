@@ -56,21 +56,24 @@ header {
 
 /* fin header */
 
-/* *Body */
-
 /* cardGrid contenedor */
 
 .contenedor__card {
-    padding: 5vw;
     display: flex;
-    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+/* producto */
+.producto {
+    background: red;
 }
 
 /* card */
 .card {
     background: #1f1e1e;
-    width: 90%;
+    width: 80%;
     height: auto;
+    margin: 5% 10%;
 }
 
 .card__titleRopa {
@@ -126,6 +129,10 @@ header {
     filter: opacity(100%);
 }
 
+.p__producto {
+    font-weight: bold;
+    text-align: center;
+}
 
 /* fin Card */
 

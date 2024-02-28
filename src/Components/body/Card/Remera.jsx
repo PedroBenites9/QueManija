@@ -15,9 +15,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Remera = (leRemera) => {
-  const { name, price, category, variant } = leRemera[0];
+  const { name, price, variant } = leRemera[0];
   const color = variant.map((e) => e.color.hex);
-
   const [colores, setColores] = useState(color[0]);
 
   // Settings para personalizar el carousel
@@ -68,8 +67,9 @@ const Remera = (leRemera) => {
           <h3 className="card__title">{name}</h3>
           {/* precio */}
           <span>${price}</span>
-          <p>{category}</p>
-          {/* boton de compra */}
+          {/*
+           * agregar boton de compra */}
+
           <div className="card__colors">
             {variant.map((e) => (
               <button
