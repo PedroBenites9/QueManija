@@ -66,7 +66,6 @@ const Gorras = (leRemera) => {
           <h3 className="card__title">{name}</h3>
           {/* precio */}
           <span>${price}</span>
-
           {/* boton de compra */}
           <div className="card__colors"></div>
         </div>
