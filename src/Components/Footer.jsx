@@ -22,13 +22,6 @@ const Footer = () => {
   };
 
   return (
-<<<<<<< HEAD
-    <footer className="footer__container">
-      {/* logo */}
-      {/* links */}
-      {/* redes */}
-      {/* tarjetas */}
-=======
     <footer>
       <img src={logo} alt="logo footer" />
       <div className="footer__linksRedes">
@@ -48,7 +41,9 @@ const Footer = () => {
          *! hacer clickeable el foooter, agregar listas y sector de tarjetas
          */}
       </div>
->>>>>>> main
+      <div className="footer__links">
+        <p>Aceptamos los siguientes medio de pago: </p>
+      </div>
     </footer>
   );
 };

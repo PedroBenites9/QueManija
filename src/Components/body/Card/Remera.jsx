@@ -28,6 +28,7 @@ const Remera = (leRemera) => {
     fade: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: false,
   };
 
   const ImgCard = ({ urlImg }) => {

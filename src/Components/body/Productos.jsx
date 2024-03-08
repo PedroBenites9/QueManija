@@ -15,8 +15,10 @@ const Productos = () => {
      */
 
     <div className="contenedor__card">
+      <h3>Nuestras tendencias!</h3>
       <Remera {...producto} />
       <img className="body__img" src={fotoBody} alt="foto hombre" srcset="" />
+      <h3>Añadile mas estilo a tu look!</h3>
       <Gorras {...producto} />
     </div>
   );
