@@ -177,3 +177,15 @@ footer>img {
     width: auto !important;
     color: rgb(67, 168, 67);
 }
+
+.footer__pagos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer__card {
+    width: 50px;
+    height: 35px;
+    border-radius: 10px;
+}
