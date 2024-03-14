@@ -66,6 +66,7 @@ const Gorras = (leRemera) => {
           <span>${price}</span>
           {/* boton de compra */}
           <div className="card__colors"></div>
+          <button>Agrega carrito</button>
         </div>
       </div>
     </>

@@ -16,9 +16,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Remera = (leRemera) => {
-  const { name, price, variant } = leRemera[0];
+  const { name, price, variant, size } = leRemera[0];
   const color = variant.map((e) => e.color.hex);
   const [colores, setColores] = useState(color[0]);
+  const [talla, setTalla] = useState("");
+  const miStorage = window.localStorage;
 
   // Settings para personalizar el carousel
   const settings = {
@@ -85,6 +87,17 @@ const Remera = (leRemera) => {
               </button>
             ))}
           </div>
+          <div>
+            <select id="size__ropa" name="size">
+              {size.map((e) => (
+                <option value={e}>{e}</option>
+              ))}
+            </select>
+          </div>
+          {/* utilizar useState para almacenar informacion  */}
+          <button onClick={() => miStorage.setItem(name)}>
+            Agregar carrito
+          </button>
         </div>
       </div>
     </>

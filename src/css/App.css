@@ -156,6 +156,7 @@ footer {
     flex-flow: column wrap;
     align-items: center;
     background-color: #1f1e1e;
+    padding: 10px 0;
 }
 
 
