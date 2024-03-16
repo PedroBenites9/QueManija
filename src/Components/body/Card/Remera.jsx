@@ -18,8 +18,9 @@ import "slick-carousel/slick/slick-theme.css";
 const Remera = (leRemera) => {
   const { name, price, variant, size } = leRemera[0];
   const color = variant.map((e) => e.color.hex);
+  const sizeRemera = size.map((e) => e);
   const [colores, setColores] = useState(color[0]);
-  const [talla, setTalla] = useState("");
+  const [talla, setTalla] = useState(sizeRemera[0]);
   const miStorage = window.localStorage;
 
   // Settings para personalizar el carousel
@@ -74,30 +75,32 @@ const Remera = (leRemera) => {
           {/* precio */}
           <span>${price}</span>
           {/* boton de compra */}
-          <div className="card__colors">
-            {variant.map((e) => (
-              <button
-                className={colores === e.color.hex ? "btn active" : "btn"}
-                style={{ backgroundColor: e.color.hex }}
-                onClick={() => setColores(e.color.hex)}
-              >
-                {colores === e.color.hex ? (
-                  <FaCheck style={{ color: "#717171" }} />
-                ) : null}
-              </button>
-            ))}
-          </div>
-          <div>
-            <select id="size__ropa" name="size">
-              {size.map((e) => (
-                <option value={e}>{e}</option>
+          <div className="card__date">
+            <div className="card__colors">
+              {variant.map((e) => (
+                <button
+                  className={colores === e.color.hex ? "btn active" : "btn"}
+                  style={{ backgroundColor: e.color.hex }}
+                  onClick={() => setColores(e.color.hex)}
+                >
+                  {colores === e.color.hex ? (
+                    <FaCheck style={{ color: "#717171" }} />
+                  ) : null}
+                </button>
               ))}
-            </select>
+            </div>
+            <div>
+              <select id="size__ropa" name="size">
+                {size.map((e) => (
+                  <option value={() => setTalla(e)}>{console.log(e)}</option>
+                ))}
+              </select>
+            </div>
+            {/* utilizar useState para almacenar informacion  */}
+            <button onClick={() => alert(talla)} className="button">
+              Agregar carrito
+            </button>
           </div>
-          {/* utilizar useState para almacenar informacion  */}
-          <button onClick={() => miStorage.setItem(name)}>
-            Agregar carrito
-          </button>
         </div>
       </div>
     </>
