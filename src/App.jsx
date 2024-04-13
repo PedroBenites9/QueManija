@@ -23,6 +23,10 @@ const App = () => {
       }),
     [darkModeToggle]
   );
+
+  //* hacer que el carousel obtenga la data pero desde useContext
+  //* rediseñar card y estructurar el mismo
+  //* mejorar la logica y el uso de los componetes
   return (
     <>
       <ThemeProvider theme={theme}>

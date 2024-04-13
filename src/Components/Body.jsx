@@ -3,8 +3,11 @@ import Carousel from "./body/Carousel";
 import { Typography } from "@mui/material";
 import Productos from "./body/Productos";
 import "../css/App.css";
+import shirt from "../Mocks/ropa.json";
 
 const Body = () => {
+  const { remeras } = shirt;
+
   return (
     <div>
       <Carousel />
@@ -19,7 +22,7 @@ const Body = () => {
           Envios superiores a $30000, envio gratis
         </Typography>
       </div>
-      <Productos />
+      <Productos remera={remeras} />
     </div>
   );
 };

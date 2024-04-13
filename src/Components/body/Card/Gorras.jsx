@@ -24,6 +24,7 @@ const Gorras = (leRemera) => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: false,
   };
 
   const ImgCard = ({ urlImg }) => {
@@ -58,14 +59,14 @@ const Gorras = (leRemera) => {
         {/*Card Carousel*/}
         <Carousel />
         {/* Data Carousel */}
-        <div className="card__content">
+        <div className="card__date card__content">
           {/*  Nombre de producto */}
-          <h3 className="card__title">{name}</h3>
+          {/* <h3 className="card__title">{name}</h3> */}
           {/* precio */}
           <span>${price}</span>
-
+          <div className="card__colors "></div>
           {/* boton de compra */}
-          <div className="card__colors"></div>
+          <button className="button">Agrega carrito</button>
         </div>
       </div>
     </>
