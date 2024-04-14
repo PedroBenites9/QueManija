@@ -1,4 +1,3 @@
-import Slider from "react-slick/lib/slider";
 import "./remera.css";
 import ImagenesCard from "./ImagenesCard";
 
