@@ -1,15 +1,16 @@
 import { createContext, useState } from "react";
 
-export const colorContext = createContext();
+export const ColorContext = createContext();
 
-export function ColorRopa({ children }) {
+export function ColorRopaProvider({ children }) {
   const [colorRopa, setColorRopa] = useState({
-    ropaClothe: "#000",
+    color: "#000",
+    id: "1",
   });
-
+  console.log(colorRopa);
   return (
-    <colorContext.Provider value={{ colorRopa, setColorRopa }}>
+    <ColorContext.Provider value={{ colorRopa, setColorRopa }}>
       {children}
-    </colorContext.Provider>
+    </ColorContext.Provider>
   );
 }

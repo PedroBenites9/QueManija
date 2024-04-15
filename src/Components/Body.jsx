@@ -3,14 +3,14 @@ import Carousel from "./body/Carousel";
 import { Typography } from "@mui/material";
 import Productos from "./body/Productos";
 import "../css/App.css";
-import shirt from "../Mocks/ropa.json";
+import remeras from "../Mocks/ropa.json";
 import { useFilterColor } from "../hooks/useFilterColor";
 
 const Body = () => {
   // const { remeras } = shirt;
-  const [remeras] = useState(shirt);
+  const [remera] = useState(remeras.remeras);
   const { filteredColor } = useFilterColor();
-  const filteredColorRemera = filteredColor(remeras);
+  const filteredColorRemera = filteredColor(remera);
   return (
     <div>
       <Carousel />

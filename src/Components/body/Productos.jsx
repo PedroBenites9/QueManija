@@ -9,7 +9,6 @@ import Gorras from "./Card/Gorras";
 import Remera from "./Card/Remera";
 
 const Productos = ({ remera }) => {
-  console.log(remera);
   return (
     /**
      ** Será un contenedor de todos los productos a ofrecer,
