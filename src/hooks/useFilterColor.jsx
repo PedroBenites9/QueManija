@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ColorRopa } from "../Components/body/context/colorRopa";
+import { ColorRopa } from "../Components/body/context/ColorRopa";
 
 export function useFilterColor() {
   const { colorRopa, setColorRopa } = useContext(ColorRopa);
