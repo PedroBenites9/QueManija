@@ -3,13 +3,7 @@ import Slider from "react-slick/lib/slider";
 export default function ImagenesCard({ url }) {
   const NextArrow = (props) => {
     const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{ ...style, background: "red" }}
-        onClick={onClick}
-      />
-    );
+    return <div className={className} style={{ ...style }} onClick={onClick} />;
   };
   const settings = {
     dots: true,

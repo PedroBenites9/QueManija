@@ -3,6 +3,8 @@ img {
     height: auto;
 }
 
+.products {}
+
 .products__card {
     width: 80%;
     height: auto;

@@ -7,10 +7,8 @@
         "precio": 5000,
         "stock": 50,
         "categoria": "Remera",
-        "color": [{
-            "colorName": "bordo",
-        "hex": "#FFD1DC"
-        }],
+        "color": "#FFD1DC"
+        ,
         "imagen":[
             "https://blz04pap002files.storage.live.com/y4mPO2e97mVn4y7zZX_Zd_Zn72Q6-xUKL0tX4-pHdCGa6oUwWjWkhlpIAk5vlcLqXVmQwJbXeYB_qgIVW8XCTC7Ifum9paH5TD1LTQn_FoRPghg6JXRIC1sj_osU84JkeELzvvIQEtJxiGQAq8AqDgIsOrWCF3zDG7U_FN-OZiNUDDNjZFJKG8zkEoyWNvw9BtsmVorv8YwMqnuvGYCQ-RvcP3lF285lpbiOYUh4_hwZAw?encodeFailures=1&width=630&height=945",
             "https://blz04pap002files.storage.live.com/y4mKg4dgVcvqIIsChLC55MADxKuAg0UajDqIiOol8lOVOJy990N4jLX5uu-B-p7MJ-OxME5TfirRj95z-WlbSXDq52_N3osm7r19iEf8IFI5u6sBfQ2EomZpNjdl-P25WaNfyiFzb8nQ65hEzG-Wv1faulgufjUIh_5Pc6yaVhLrD8QGCLxkTVqSoM9FCVmcKiVO0Dg6IJpanJvyFhg3zk3A7zMKOqWQoiYXNlGHbvAX8w?encodeFailures=1&width=630&height=945",
@@ -24,10 +22,7 @@
         "precio": 5000,
         "stock": 50,
         "categoria": "Remera",
-        "color": [{
-            "colorName": "Negro",
-        "hex": "#000"
-        }],
+        "color":"#000",
         "imagen":[
             "https://blz04pap002files.storage.live.com/y4mxOS64yBmyJbAWs-LwE4VxRgsNLSR26aL_6UPCBHo_7ljAbC2f8sI91303TVcgnj5FWpEmj2bYkSqNbknL2TjuXWwl2_9eLsHHmiPkPIJyfFn9m2v6scJTRZTAWETntKEVm8wMB624mr5GidIMSXj36LLwhgwkmY4cUCOqAU-9gEboYrs7pMEdx4hZhvh6jDPaiaoacOgNfN1yO7cf0YGvKfMkVPxz7BFEaD0uqoEVUk?encodeFailures=1&width=630&height=945",
             "https://blz04pap002files.storage.live.com/y4mQ7Z3GqODKqXkwMpGcselw9gGvtWhGmBzgOVnH1InZMlC04jgbhJcvUTzMYAX0rTLTWv9UuBGgeQ7_tN-vJ6Vs6sOM4lsYzckZOJmNMfdwl2I8It3httYvfOpPA_W6l_3C-eVqz30hV8tcz7NWJIDKElyeMZpIKQhC5s20iFuhkRs5eQHXCZ5h39NII-I2mwlZuBJLIKDyjqvTioHrT9kZGnxCIeCfPwcg5ZzbM3iDxs?encodeFailures=1&width=630&height=945",
@@ -42,10 +37,8 @@
         "precio": 5000,
         "stock": 50,
         "categoria": "Remera",
-        "color": [{
-            "colorName": "Verde",
-        "hex": "#50C878"
-        }],
+        "color": "#50C878"
+        ,
         "imagen":[
             "https://blz04pap002files.storage.live.com/y4msSmTD-e0D9_0G8lG6FXhoezVZRiJG9qO5bK8-w5Zdowk7_P8UGOBzF5BrYqRDXLo4wRCEYC4TlokY3fH83tkuKBvCLwpPXztlfljpyzYvFXVFgASt5W6piXyeOZONDzZSEcXO84zZ7RPaxsP7E7rPqGoIWxAXHQ9atcUKM1aTZIRL-esQ4LNgcTBDTcNVaKa-9RKV8xHvg1wupkqHNOFGx7pVNN-nRA2IZlV-hd0MPU?encodeFailures=1&width=630&height=945",
             "https://blz04pap002files.storage.live.com/y4mexH3rh2yPjLipbaqnObJgvxjibtob5mBIKGbuKdSgGu-GsxwUqCW2FWyAi0Z815F4bPO2CVAhfwKziJKDSdbnt1TuPZ2LJb1dfCzfQab5N1a_zsSSbIsfQT9_SUC9-vQjA96ddYYiI-gdV_2-VEK5Lz7l0VvqmmJCA9Qft0YqJMjFRbXExUQ_1kV0gieQTi1ScP2-QvbpCqacA2CTqN_KOdt8CYzRKdEooqMgeh_Ksc?encodeFailures=1&width=630&height=945",
