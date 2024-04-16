@@ -4,10 +4,10 @@ export const ColorContext = createContext();
 
 export function ColorRopaProvider({ children }) {
   const [colorRopa, setColorRopa] = useState({
-    color: "#000",
+    color: "#FFD1DC",
     id: "1",
   });
-  console.log(colorRopa);
+
   return (
     <ColorContext.Provider value={{ colorRopa, setColorRopa }}>
       {children}

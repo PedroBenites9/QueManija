@@ -5,12 +5,13 @@ import Productos from "./body/Productos";
 import "../css/App.css";
 import remeras from "../Mocks/ropa.json";
 import { useFilterColor } from "../hooks/useFilterColor";
+import { ButtonColor } from "./body/Card/ButtonColor";
 
 const Body = () => {
-  // const { remeras } = shirt;
   const [remera] = useState(remeras.remeras);
-  const { filteredColor } = useFilterColor();
-  const filteredColorRemera = filteredColor(remera);
+  const { filterColor } = useFilterColor();
+  const filteredColorRemera = filterColor(remera);
+
   return (
     <div>
       <Carousel />
@@ -25,6 +26,7 @@ const Body = () => {
           Envios superiores a $30000, envio gratis
         </Typography>
       </div>
+      <ButtonColor color={remera} />
       <Productos remera={filteredColorRemera} />
     </div>
   );
