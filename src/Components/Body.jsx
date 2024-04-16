@@ -26,6 +26,7 @@ const Body = () => {
           Envios superiores a $30000, envio gratis
         </Typography>
       </div>
+      <h3>Nuestras tendencias!</h3>
       <ButtonColor color={remera} />
       <Productos remera={filteredColorRemera} />
     </div>

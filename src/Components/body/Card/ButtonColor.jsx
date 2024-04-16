@@ -12,10 +12,13 @@ export function ButtonColor({ color }) {
         <button
           key={id}
           onClick={() => handleChangeColor(colorButton)}
-          style={{ backgroundColor: colorButton.color }}
-        >
-          boton
-        </button>
+          style={{
+            backgroundColor: colorButton.color,
+            width: "30px",
+            height: "30px",
+            borderRadius: "50%",
+          }}
+        ></button>
       ))}
     </>
   );

@@ -1,6 +1,5 @@
 import "./remera.css";
 import ImagenesCard from "./ImagenesCard";
-import { useState } from "react";
 
 export default function Remera({ clothes }) {
   return (
