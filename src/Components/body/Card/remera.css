@@ -3,6 +3,18 @@ img {
     height: auto;
 }
 
-.products_card {
+.products {}
+
+.products__card {
+    width: 80%;
+    height: auto;
     margin: 20px;
+    background-color: #272727;
+    padding: 10px;
+}
+
+.products__card img {
+    width: 70vw;
+    height: auto;
+    margin: 10px auto;
 }

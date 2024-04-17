@@ -9,7 +9,6 @@ import Gorras from "./Card/Gorras";
 import Remera from "./Card/Remera";
 
 const Productos = ({ remera }) => {
-  remera.map((e) => console.log(e));
   return (
     /**
      ** Será un contenedor de todos los productos a ofrecer,
@@ -17,7 +16,6 @@ const Productos = ({ remera }) => {
      */
 
     <div className="contenedor__card">
-      <h3>Nuestras tendencias!</h3>
       <Remera clothes={remera} />
       <img className="body__img" src={fotoBody} alt="foto hombre" srcset="" />
       <h3>Añadile mas estilo a tu look!</h3>
