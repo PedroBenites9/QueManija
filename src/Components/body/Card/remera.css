@@ -3,6 +3,9 @@ img {
     height: auto;
 }
 
-.products_card {
-    margin: 20px;
+.products {}
+
+.products__card {
+    margin: 20px 20%;
+    background-color: rgb(27, 27, 27);
 }
