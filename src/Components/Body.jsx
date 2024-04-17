@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import Carousel from "./body/Carousel";
 import { Typography } from "@mui/material";
 import Productos from "./body/Productos";
 import "../css/App.css";
-import shirt from "../Mocks/ropa.json";
+import remeras from "../Mocks/ropa.json";
+import { useFilterColor } from "../hooks/useFilterColor";
+import { ButtonColor } from "./body/Card/ButtonColor";
 
 const Body = () => {
-  const { remeras } = shirt;
+  const [remera] = useState(remeras.remeras);
+  const { filterColor } = useFilterColor();
+  const filteredColorRemera = filterColor(remera);
 
   return (
     <div>
@@ -22,7 +26,9 @@ const Body = () => {
           Envios superiores a $30000, envio gratis
         </Typography>
       </div>
-      <Productos remera={remeras} />
+      <h3>Nuestras tendencias!</h3>
+      <ButtonColor color={remera} />
+      <Productos remera={filteredColorRemera} />
     </div>
   );
 };
