@@ -2,9 +2,11 @@ import React from "react";
 import MenuLeft from "./MenuLeft";
 // Icon Material UI
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
-import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
+
 // logo
 import logo from "../../img/logo.png";
+import { Cart } from "./Cart";
+import "./header.css";
 
 const NavBar = () => {
   return (
@@ -37,7 +39,8 @@ const NavBar = () => {
         {/* seguimiento de compra */}
         <LocalShippingIcon />
         {/* carrito */}
-        <ShoppingBagIcon />
+
+        <Cart />
       </nav>
     </header>
   );

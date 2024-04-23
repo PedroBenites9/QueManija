@@ -10,7 +10,8 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import Footer from "./Components/Footer";
-import { ColorRopaProvider } from "./Components/body/context/ColorRopa";
+import { ColorRopaProvider } from "./context/ColorRopa";
+import { ProductProvider } from "./context/ProductContext";
 
 const App = () => {
   const darkModeToggle = useMediaQuery("(prefers-color-scheme: dark)");
@@ -32,10 +33,12 @@ const App = () => {
     <>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Header />
-        <ColorRopaProvider>
-          <Body />
-        </ColorRopaProvider>
+        <ProductProvider>
+          <Header />
+          <ColorRopaProvider>
+            <Body />
+          </ColorRopaProvider>
+        </ProductProvider>
         <Footer />
       </ThemeProvider>
     </>
