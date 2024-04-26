@@ -4,7 +4,7 @@ export const ColorContext = createContext();
 
 export function ColorRopaProvider({ children }) {
   const [colorRopa, setColorRopa] = useState({
-    color: "#FFD1DC",
+    color: "#e10552",
     id: "1",
   });
 
