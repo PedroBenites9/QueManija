@@ -6,7 +6,6 @@ import "../css/App.css";
 import "./body.css";
 import remeras from "../Mocks/ropa.json";
 import { useFilterColor } from "../hooks/useFilterColor";
-import { ButtonColor } from "./body/Card/ButtonColor";
 
 const Body = () => {
   const [remera] = useState(remeras.remeras);
