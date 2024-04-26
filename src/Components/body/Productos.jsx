@@ -10,11 +10,6 @@ import Remera from "./Card/Remera";
 
 const Productos = ({ remera }) => {
   return (
-    /**
-     ** Será un contenedor de todos los productos a ofrecer,
-     ** solo es cuestion de crear una componente tipo 'Card' y colocarlo aqui
-     */
-
     <div className="contenedor__card">
       <Remera clothes={remera} />
       <img className="body__img" src={fotoBody} alt="foto hombre" srcset="" />
