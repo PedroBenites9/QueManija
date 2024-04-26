@@ -34,7 +34,6 @@ export function Cart() {
 
   return (
     <>
-      ;
       <label htmlFor={cartCheckboxId} className="cart-button">
         <Badge badgeContent={producto.cantidadCarrito} color={"error"}>
           <ShoppingBagIcon />

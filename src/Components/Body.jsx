@@ -27,7 +27,6 @@ const Body = () => {
       </div>
       <section>
         <h3>Nuestras tendencias!</h3>
-
         <Productos remera={filteredColorRemera} />
       </section>
     </div>
