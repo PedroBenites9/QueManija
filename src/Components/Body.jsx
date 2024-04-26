@@ -26,7 +26,9 @@ const Body = () => {
         </Typography>
       </div>
       <section>
-        <h3>Nuestras tendencias!</h3>
+        <h3 style={{ fontSize: "2rem", margin: "  10px " }}>
+          Nuestras tendencias!
+        </h3>
         <Productos remera={filteredColorRemera} />
       </section>
     </div>
