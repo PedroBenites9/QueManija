@@ -21,14 +21,18 @@ export default function Remera({ clothes }) {
             return (
               <>
                 <div className="products__card">
-                  <h2>{Remera.title}</h2>
                   <ImagenesCard url={Remera.imagen} />
-                  <div>
-                    <strong>${Remera.precio}</strong>
-                    <p>{Remera.description}</p>
+                  <div className="products__card-description">
+                    <h2 className="products__title">{Remera.title}</h2>
+                    <strong className="products__price">
+                      ${Remera.precio}
+                    </strong>
+                    <p className="products__description">
+                      {Remera.description}
+                    </p>
                   </div>
-                  <ButtonColor color={remera} />
-                  <div>
+                  <div className="products__card-button">
+                    <ButtonColor color={remera} />
                     <button
                       onClick={() => {
                         isProductInCart

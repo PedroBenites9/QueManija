@@ -39,7 +39,6 @@ export function Cart() {
           <ShoppingBagIcon />
         </Badge>
       </label>
-
       <input type="checkbox" name="" id={cartCheckboxId} hidden />
       {/* agregar animacion al carrito */}
       <aside className="cart slide-left">

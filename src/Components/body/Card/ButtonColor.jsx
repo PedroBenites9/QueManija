@@ -7,7 +7,7 @@ export function ButtonColor({ color }) {
     setColorRopa(colorClothe);
   };
   return (
-    <>
+    <div>
       {color.map((colorButton, id) => (
         <button
           key={id}
@@ -20,6 +20,6 @@ export function ButtonColor({ color }) {
           }}
         ></button>
       ))}
-    </>
+    </div>
   );
 }
