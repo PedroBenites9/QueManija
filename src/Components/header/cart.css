@@ -6,6 +6,7 @@
     right: 0px;
     top: 0px;
     width: 200px;
+
 }
 
 .cart img {
@@ -60,8 +61,14 @@
     display: block;
     position: fixed;
     z-index: 1;
+
+
 }
 
 .cart:last-child {
     text-align: center;
+}
+
+.slide-left {
+    animation: 3s linear 1s;
 }

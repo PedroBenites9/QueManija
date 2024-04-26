@@ -42,6 +42,7 @@ const NavBar = () => {
 
         <Cart />
       </nav>
+      {/* sd */}
     </header>
   );
 };

@@ -1,7 +1,7 @@
-import { useContext, useId } from "react";
+import { useContext, useId, useState } from "react";
 import "./cart.css";
 import { ClearCartIcon } from "../Icon.jsx";
-import { Badge } from "@mui/material";
+import { Badge, Drawer, IconButton, List } from "@mui/material";
 import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
 import { ProductContext } from "../../context/ProductContext.jsx";
 function CartItem({
@@ -31,6 +31,7 @@ export function Cart() {
   const cartCheckboxId = useId();
   const { producto, addToCart, removeToCart, ClearCart } =
     useContext(ProductContext);
+
   return (
     <>
       <label htmlFor={cartCheckboxId} className="cart-button">
@@ -38,8 +39,10 @@ export function Cart() {
           <ShoppingBagIcon />
         </Badge>
       </label>
+
       <input type="checkbox" name="" id={cartCheckboxId} hidden />
-      <aside className="cart">
+      {/* agregar animacion al carrito */}
+      <aside className="cart slide-left">
         <ul>
           {producto.map((product) => (
             <CartItem
