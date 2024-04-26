@@ -1,7 +1,7 @@
-import { useContext, useId, useState } from "react";
+import { useContext, useId } from "react";
 import "./cart.css";
 import { ClearCartIcon } from "../Icon.jsx";
-import { Badge, Drawer, IconButton, List } from "@mui/material";
+import { Badge } from "@mui/material";
 import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
 import { ProductContext } from "../../context/ProductContext.jsx";
 function CartItem({
