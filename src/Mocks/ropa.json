@@ -2,15 +2,13 @@
 {
     "remeras":[{
         "id":1,
-        "title": "Remera Oversize Bordo",
+        "title": "Remera Oversize Rosado",
         "description":"Remera oversize bien fachera color bordo",
         "precio": 5000,
         "stock": 50,
         "categoria": "Remera",
-        "color": [{
-            "colorName": "bordo",
-        "hex": "#FFD1DC"
-        }],
+        "color": "#FFD1DC"
+        ,
         "imagen":[
             "https://blz04pap002files.storage.live.com/y4m71-unRzz7Waz4Q_uK3O0-gthMnM5TM5MX7NlIFn7EAgF0CUi95mqGNcJIo3GPLGBdlY79cggEpopVzRX4bmswrwzfKZzKknyStOnjrOEh8NiAqp7WsEoLvrGFF9t3h8mQfCdX8lB47UrpT36EeZhjbzCvgOVdVANzuxJWwOu9V8u04HuGHN_87UYVL2IuooirOft-nn8X9uSjxIWHm0CJ-rWS80dioLeb7HKV9W3iLE?encodeFailures=1&width=606&height=910",
             "https://blz04pap002files.storage.live.com/y4mhQjxenov6XMegASnTZEt-KnUuxswfMZ2K-Jft0ulwKjt1zABRU4kOTCVZwiLqklJT88d755JgYZa-cCsMI-t7FykuZ3eu7mGlnI-4TcCNu1w536yXaPt5thCqZ2kebiHF9Q3Z8zhoWZnYQPi3nwMuoiE5VGKxCz3LeUXANU6abd_2itltIYMM5as8hRznWxCCKVG0ywcbTKotGX7dtHfmzrk07nCIIFrkZjO-UmPMiI?encodeFailures=1&width=606&height=910",
@@ -24,10 +22,7 @@
         "precio": 5000,
         "stock": 50,
         "categoria": "Remera",
-        "color": [{
-            "colorName": "Negro",
-        "hex": "#000"
-        }],
+        "color":"#000",
         "imagen":[
             "https://blz04pap002files.storage.live.com/y4msbyNdIPh1V8Y0uKXeSpVihRkxgaDVNDdyDCBbSH2Lg2maWYHqCokEe5KRdEEnsnoPIuZvHoe5SUWfyDJ0bFTnNK4v2OZFagnbfpe5FAKkae8xDBEwZjTvci7cOukHIG-sR6fOhCopkE4p_aCzFcqcJdQAfx28xQm9gHS33TfGorJdsWQ5ykuCjaNUm-VmP9a8fZSxfgxjFb_M-q5RsVSRTvf-6qieWX7_XDO2PMv5ZA?encodeFailures=1&width=606&height=910",
             "https://blz04pap002files.storage.live.com/y4mGQYmpbVvFQr7o6RLFruE9uewiSb7v6c71HbBX6K7Pki5MhsqkvfL1MM_3mBKxrKcgDsB2_j1l_7ZJ50aplNA9nkLtr3LZySMSVsHmEmoEOsWjbQs2hRvPGmxevXtn-ga6hMjNt5TkUkYQRTrQKSzQygFMYs93aCyUGsMJW6L9Lx2i_7yJlrmrj7dpQIhUb7kR4u5Vzy1ILXcHy65o8EEMLgtXnLQY4A_fc0xol3RhB0?encodeFailures=1&width=606&height=910",
@@ -42,10 +37,8 @@
         "precio": 5000,
         "stock": 50,
         "categoria": "Remera",
-        "color": [{
-            "colorName": "Verde",
-        "hex": "#50C878"
-        }],
+        "color": "#50C878"
+        ,
         "imagen":[
             "https://blz04pap002files.storage.live.com/y4mHyRnozCkDARzsz8QvOkkOD2LjeGv43Kg5Ggew8t2IXStE7I801YcwGlms8fNVoYSArjJAz3Em1PemScsrej3cBnP1ipVV-guRAoDznAxx2U22N-6LBy7hjccjhbwV_1zXPs8prKFIHqky-kXKeA_LU0NJo7LohjSZFoFK_C7_-hWRy4vrEoNfLCaiqrhkL4uuHZ6e02JfACPY-C15XYgr6SRS-P4-IXlNYC0eHS-sVg?encodeFailures=1&width=606&height=910",
             "https://blz04pap002files.storage.live.com/y4medbRg08EApmGcXX29MykhpUFADLt-QBjPYH0GkFg3B27jz9W0pDYlkJl4UKRRBqcBymXckZnJ6xnT_8K6EM3lpw-RzvM5cWndFAV-2r8VqMJp63lACicKdN50hF-KOP4cLySlpOt7nWpQ-qSGRUsUuQMzcbG7hP5LA9EvwIYvnoOjXlsqGm9jxeW0avj9U3zTZE0XTP-bBQxcvSxvXnjDtPrFu0u_i0Exba4S7-CP2g?encodeFailures=1&width=606&height=910",
