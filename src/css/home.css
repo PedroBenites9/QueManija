@@ -1,0 +1,19 @@
+.home {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home__text {
+
+    text-align: center;
+}
+
+.fondoHome {
+    height: auto;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}

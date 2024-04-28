@@ -6,6 +6,7 @@ import "../css/App.css";
 import "./body.css";
 import remeras from "../Mocks/ropa.json";
 import { useFilterColor } from "../hooks/useFilterColor";
+import { Home } from "./body/Home";
 
 const Body = () => {
   const [remera] = useState(remeras.remeras);
@@ -13,6 +14,13 @@ const Body = () => {
   const filteredColorRemera = filterColor(remera);
   return (
     <div>
+      <Home />
+      <section>
+        <h3 style={{ fontSize: "2rem", margin: "  10px " }}>
+          Nuestras tendencias!
+        </h3>
+        <Productos remera={filteredColorRemera} />
+      </section>
       <Carousel />
       <div>
         <Typography
@@ -25,12 +33,6 @@ const Body = () => {
           Envios superiores a $30000, envio gratis
         </Typography>
       </div>
-      <section>
-        <h3 style={{ fontSize: "2rem", margin: "  10px " }}>
-          Nuestras tendencias!
-        </h3>
-        <Productos remera={filteredColorRemera} />
-      </section>
     </div>
   );
 };
