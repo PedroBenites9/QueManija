@@ -2,20 +2,19 @@ import React, { useState } from "react";
 import Carousel from "./body/Carousel";
 import { Typography } from "@mui/material";
 import Productos from "./body/Productos";
-import "../css/App.css";
-import "./body.css";
 import remeras from "../Mocks/ropa.json";
 import { useFilterColor } from "../hooks/useFilterColor";
 import { Home } from "./body/Home";
+import "./body.css";
 
 const Body = () => {
   const [remera] = useState(remeras.remeras);
   const { filterColor } = useFilterColor();
   const filteredColorRemera = filterColor(remera);
   return (
-    <div>
+    <>
       <Home />
-      <section>
+      <section className="section__card">
         <h3 style={{ fontSize: "2rem", margin: "  10px " }}>
           Nuestras tendencias!
         </h3>
@@ -33,7 +32,7 @@ const Body = () => {
           Envios superiores a $30000, envio gratis
         </Typography>
       </div>
-    </div>
+    </>
   );
 };
 
