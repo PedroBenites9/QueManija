@@ -1,8 +1,6 @@
 import React from "react";
-// import Card from "./Card";
-// import CardProduct from "./CardProduct";
-// import Remera from "./Card/Remera";
 import "../../css/App.css";
+import Gorras from "./Card/Gorras";
 import Remera from "./Card/Remera";
 
 const Productos = ({ remera }) => {
