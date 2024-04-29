@@ -10,7 +10,8 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import Footer from "./Components/Footer";
-import { ColorRopaProvider } from "./Components/body/context/ColorRopa";
+import { ColorRopaProvider } from "./context/ColorRopa";
+import { ProductProvider } from "./context/ProductContext";
 
 const App = () => {
   const darkModeToggle = useMediaQuery("(prefers-color-scheme: dark)");
@@ -28,14 +29,17 @@ const App = () => {
   //* hacer que el carousel obtenga la data pero desde useContext
   //* rediseñar card y estructurar el mismo
   //* mejorar la logica y el uso de los componetes
+
   return (
     <>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Header />
-        <ColorRopaProvider>
-          <Body />
-        </ColorRopaProvider>
+        <ProductProvider>
+          <Header />
+          <ColorRopaProvider>
+            <Body />
+          </ColorRopaProvider>
+        </ProductProvider>
         <Footer />
       </ThemeProvider>
     </>

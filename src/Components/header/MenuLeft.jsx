@@ -19,6 +19,7 @@ const MenuLeft = () => {
 
       <Drawer
         open={open}
+        anchor="left"
         onClose={() => {
           setOpen(false);
         }}
