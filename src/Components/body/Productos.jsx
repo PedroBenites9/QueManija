@@ -1,10 +1,5 @@
 import React from "react";
-import producto from "./ropa";
-// import Card from "./Card";
-// import CardProduct from "./CardProduct";
-// import Remera from "./Card/Remera";
 import "../../css/App.css";
-import fotoBody from "../../img/imgHombre.JPG";
 import Gorras from "./Card/Gorras";
 import Remera from "./Card/Remera";
 
