@@ -1,5 +1,4 @@
 import Slider from "react-slick/lib/slider";
-
 import "./remera.css";
 export default function ImagenesCard({ url }) {
   const NextArrow = (props) => {
