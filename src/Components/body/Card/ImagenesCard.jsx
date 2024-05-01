@@ -38,10 +38,8 @@ export default function ImagenesCard({ url }) {
     <>
       <Slider {...settings}>
         {url.map((url, index) => (
-          <div className="img__card" key={index}>
-            <div className="img__card-container" key={index}>
-              <img src={url} alt="remera" />
-            </div>
+          <div className="img__card-container" key={index}>
+            <img src={url} alt="remera" />
           </div>
         ))}
       </Slider>
