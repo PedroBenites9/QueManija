@@ -37,7 +37,6 @@ export default function ImagenesCard({ url }) {
   return (
     <>
       <Slider {...settings}>
-        {/* colocar carousel en la imagenes */}
         {url.map((url, index) => (
           <div className="img__card" key={index}>
             <div className="img__card-container" key={index}>
