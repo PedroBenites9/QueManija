@@ -1,57 +1,58 @@
 .home {
+    height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    justify-items: center;
+    position: relative;
+}
+
+.home__carousel {
+    opacity: .35;
+    z-index: -1;
 }
 
 .home__contenedor {
-    position: relative;
-    width: 100%;
-    min-height: 300px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-}
-
-.home__text {
-    position: relative;
-    text-align: center;
-    top: 80px;
-    right: auto;
-}
-
-.fondoHome {
-    height: auto;
-    width: 100%;
     position: absolute;
-    opacity: .3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 230px;
+    gap: 40px;
 }
 
 h3,
 p {
     margin: 0;
+
+}
+
+.home__text {
+    text-align: center;
+    top: 80px;
+    right: auto;
+}
+
+.home__contenedor h3 {
+    font-size: x-large;
+    font-weight: 900;
 }
 
 /* CSS */
-.button-37 {
-    background-color: #13aa52;
-    border: 1px solid #13aa52;
-    border-radius: 4px;
-    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+.button-54 {
+    font-family: "Open Sans", sans-serif;
     font-size: 16px;
-    font-weight: 400;
-    outline: none;
-    outline: 0;
-    padding: 5px 15px;
-    text-align: center;
-    transform: translateY(0);
-    transition: transform 150ms, box-shadow 150ms;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    background-color: #5de726;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
@@ -64,6 +65,20 @@ p {
 
 @media (min-width: 768px) {
     .button-37 {
+
         padding: 10px 25px;
+
+        .button-54:active {
+            box-shadow: 0px 0px 0px 0px;
+            top: 5px;
+            left: 5px;
+        }
+
+        @media (min-width: 768px) {
+            .button-54 {
+                padding: 0.25em 0.75em;
+
+            }
+        }
     }
 }
