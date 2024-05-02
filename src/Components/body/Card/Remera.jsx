@@ -18,6 +18,7 @@ export default function Remera({ clothes }) {
         <ul>
           {clothes.map((Remera) => {
             const isProductInCart = checkProductInCart(Remera);
+            console.log(Remera);
             return (
               <>
                 <div className="products__card">

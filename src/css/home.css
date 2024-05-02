@@ -2,7 +2,7 @@
     height: 100vh;
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     justify-items: center;
     position: relative;
@@ -30,8 +30,6 @@ p {
 
 .home__text {
     text-align: center;
-    top: 80px;
-    right: auto;
 }
 
 .home__contenedor h3 {
@@ -58,27 +56,14 @@ p {
     touch-action: manipulation;
 }
 
-.button-37:hover {
-    box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
-    transform: translateY(-2px);
+.button-54:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
 }
 
 @media (min-width: 768px) {
-    .button-37 {
-
-        padding: 10px 25px;
-
-        .button-54:active {
-            box-shadow: 0px 0px 0px 0px;
-            top: 5px;
-            left: 5px;
-        }
-
-        @media (min-width: 768px) {
-            .button-54 {
-                padding: 0.25em 0.75em;
-
-            }
-        }
+    .button-54 {
+        padding: 0.25em 0.75em;
     }
 }

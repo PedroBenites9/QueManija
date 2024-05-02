@@ -7,12 +7,11 @@
         "precio": 5000,
         "stock": 50,
         "categoria": "Remera",
-        "color": "#e10552"
-        ,
+        "color": "#e10552",
         "imagen":[
-            "https://i.ibb.co/2Yw81GN/DSC-0136.jpg",
-            "https://i.ibb.co/7YNdx10/DSC-0142.jpg",
-            "https://i.ibb.co/HVvh2Np/DSC-0137.jpg"
+            "https://ibb.co/q0KfNdM",
+            "https://ibb.co/TYffJ76",
+            "https://ibb.co/HBPPc4T"
         ]
     },{
     
@@ -24,9 +23,10 @@
         "categoria": "Remera",
         "color":"#000",
         "imagen":[
-            "https://i.ibb.co/7N7w2Lf/DSC-0342.jpg",
-            "https://i.ibb.co/vcjhDsZ/DSC-0350.jpg",
-            "https://i.ibb.co/PQFP8DJ/DSC-0345.jpg"
+            "https://ibb.co/SQJ2CW8",
+            "https://ibb.co/7WXww0y",
+            "https://ibb.co/ynvyTnq"
+           
         ]
     },
     {
@@ -40,9 +40,9 @@
         "color": "#50C878"
         ,
         "imagen":[
-            "https://i.ibb.co/kJJWY3m/DSC-0199.jpg",
-            "https://i.ibb.co/mJpsd68/DSC-0201.jpg",
-            "https://i.ibb.co/94MH9Ct/DSC-0214.jpg"
+            "https://ibb.co/XXPFwK7",
+            "https://ibb.co/R97fLDn",
+            "https://ibb.co/ry0Zfzj"
         ]
     }
 ]

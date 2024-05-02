@@ -7,6 +7,7 @@ import { autoPlay } from "react-swipeable-views-utils";
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 export function CarouselHandle({ images, altura }) {
+  console.log(altura);
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
 
