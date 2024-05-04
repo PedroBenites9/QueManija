@@ -30,7 +30,7 @@ export function Home() {
         <button
           className="button-54"
           onClick={() => {
-            alert("hola xd");
+            alert("hola xd :v");
           }}
         >
           que manija!
