@@ -2,6 +2,7 @@ import Slider from "react-slick/lib/slider";
 
 import "./remera.css";
 export default function ImagenesCard({ url }) {
+  console.log(url);
   const NextArrow = (props) => {
     const { className, style, onClick } = props;
     return (
@@ -37,7 +38,6 @@ export default function ImagenesCard({ url }) {
   return (
     <>
       <Slider {...settings}>
-        {/* colocar carousel en la imagenes */}
         {url.map((url, index) => (
           <div className="img__card" key={index}>
             <div className="img__card-container" key={index}>
