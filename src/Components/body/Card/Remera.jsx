@@ -22,38 +22,36 @@ export default function Remera({ clothes }) {
           {clothes.map((Remera) => {
             const isProductInCart = checkProductInCart(Remera);
             return (
-              <>
-                <div className="products__card">
-                  <ImagenesCard url={Remera.imagen} />
-                  <div>
-                    <div className="products__card-description">
-                      <h2 className="products__title">{Remera.title}</h2>
-                      <strong className="products__price">
-                        ${Remera.precio}
-                      </strong>
-                      <p className="products__description">
-                        {Remera.description}
-                      </p>
-                    </div>
-                    <div className="products__card-button">
-                      <ButtonColor color={remera} />
-                      <button
-                        onClick={() => {
-                          isProductInCart
-                            ? removeFromCart(Remera)
-                            : addToCart(Remera);
-                        }}
-                      >
-                        {isProductInCart ? (
-                          <RemoveFromCartIcon />
-                        ) : (
-                          <AddToCartIcon />
-                        )}
-                      </button>
-                    </div>
+              <div className="products__card">
+                <ImagenesCard url={Remera.imagen} />
+                <div>
+                  <div className="products__card-description">
+                    <h2 className="products__title">{Remera.title}</h2>
+                    <strong className="products__price">
+                      ${Remera.precio}
+                    </strong>
+                    <p className="products__description">
+                      {Remera.description}
+                    </p>
+                  </div>
+                  <div className="products__card-button">
+                    <ButtonColor color={remera} />
+                    <button
+                      onClick={() => {
+                        isProductInCart
+                          ? removeFromCart(Remera)
+                          : addToCart(Remera);
+                      }}
+                    >
+                      {isProductInCart ? (
+                        <RemoveFromCartIcon />
+                      ) : (
+                        <AddToCartIcon />
+                      )}
+                    </button>
                   </div>
                 </div>
-              </>
+              </div>
             );
           })}
         </ul>

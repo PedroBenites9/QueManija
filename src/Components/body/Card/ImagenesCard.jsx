@@ -1,4 +1,6 @@
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./remera.css";
 export default function ImagenesCard({ url }) {
   const NextArrow = (props) => {
@@ -34,14 +36,14 @@ export default function ImagenesCard({ url }) {
   };
 
   return (
-    <Slider {...settings}>
-      <>
-        {url.map((url, index) => (
+    <>
+      <Slider {...settings}>
+        {url.map((pathImagen) => (
           <div>
-            <img src={url} alt="remera" />
+            <img src={pathImagen} alt="" srcset="" />
           </div>
         ))}
-      </>
-    </Slider>
+      </Slider>
+    </>
   );
 }
