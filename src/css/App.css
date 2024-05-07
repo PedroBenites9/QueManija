@@ -11,6 +11,10 @@
     height: 50%;
 }
 
+.contenedor__card {
+    text-align: center;
+}
+
 /* inicio footer */
 
 footer {

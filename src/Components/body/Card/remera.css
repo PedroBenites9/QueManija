@@ -1,3 +1,7 @@
+.products {
+    text-align: center;
+}
+
 .products__card {
     width: auto;
     height: 80%;

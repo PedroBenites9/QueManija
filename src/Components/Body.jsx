@@ -3,11 +3,9 @@ import Carousel from "./body/Carousel";
 import { Typography } from "@mui/material";
 import Productos from "./body/Productos";
 import "../css/App.css";
-import "./body.css";
 import remeras from "../Mocks/ropa.json";
 import { useFilterColor } from "../hooks/useFilterColor";
 import { Home } from "./body/Home";
-
 const Body = () => {
   const [remera] = useState(remeras.remeras);
   const { filterColor } = useFilterColor();
@@ -16,7 +14,9 @@ const Body = () => {
     <div>
       <Home />
       <section>
-        <h3 style={{ fontSize: "2rem", margin: "  10px " }}>
+        <h3
+          style={{ fontSize: "2rem", margin: "  10px ", textAlign: "center" }}
+        >
           Nuestras tendencias!
         </h3>
         <Productos remera={filteredColorRemera} />
