@@ -1,37 +1,46 @@
 import React, { useState } from "react";
-import Carousel from "./body/Carousel";
-import { Typography } from "@mui/material";
+import { Home } from "./body/Home";
+import { CardProducto } from "./body/Productos/Card/CardProducto";
+
 import Productos from "./body/Productos";
 import remeras from "../Mocks/ropa.json";
-import { useFilterColor } from "../hooks/useFilterColor";
-import { Home } from "./body/Home";
+
+import foto1 from "./../img/Remeras/imgMujer.JPG";
+import { Typography } from "@mui/material";
 import "./body.css";
 
 const Body = () => {
   const [remera] = useState(remeras.remeras);
-  const { filterColor } = useFilterColor();
-  const filteredColorRemera = filterColor(remera);
   return (
     <>
       <Home />
       <section className="section__card">
-        <h3 style={{ fontSize: "2rem", margin: "  10px " }}>
-          Nuestras tendencias!
-        </h3>
-        <Productos remera={filteredColorRemera} />
+        <h3 style={{ fontSize: "2rem", margin: " 30px 0" }}>MODA URBANA</h3>
+        <CardProducto producto={remera} />
       </section>
-      <Carousel />
-      <div>
-        <Typography
-          sx={{
-            textAlign: "center",
-            bgcolor: "#212121",
-            padding: "2px 0 2px 0",
-          }}
-        >
-          Envios superiores a $30000, envio gratis
-        </Typography>
-      </div>
+      <Typography
+        sx={{
+          textAlign: "center",
+          bgcolor: "#212121",
+          padding: "2px 0 2px 0",
+        }}
+      >
+        Compras superiores a $30000, envio gratis
+      </Typography>
+      <section className="section__cajaText">
+        <img id="fotoMujer" src={foto1} alt="fotoMujer" />
+        <div className="section__text">
+          <h3>Somos moda urbana</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quos,
+            iure, facilis tenetur nam ducimus doloribus, molestias neque facere
+            corrupti eum aut animi reprehenderit quod ad deleniti sed
+            accusantium? Consequuntur.
+          </p>
+        </div>
+      </section>
+
+      {/* <Carousel /> */}
     </>
   );
 };

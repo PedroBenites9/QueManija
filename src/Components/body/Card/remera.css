@@ -1,9 +1,9 @@
 .products__card {
     width: 80%;
     height: 80%;
-    margin: 20px;
     background-color: #272727;
     padding: 10px 20px;
+    margin: 0 0 30px 0;
 }
 
 .products__card h2 {
@@ -43,4 +43,5 @@
     display: flex;
     flex-flow: row;
     justify-content: space-around;
+    padding: 15px 0;
 }

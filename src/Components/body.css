@@ -5,4 +5,24 @@ section h3 {
 .section__card {
     display: flex;
     flex-direction: column;
+    z-index: -1;
+}
+
+.section__cajaText {
+    display: flex;
+    gap: 4rem;
+    padding: 0 5rem;
+}
+
+#fotoMujer {
+    width: 300px;
+    height: auto;
+}
+
+.section__text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
 }

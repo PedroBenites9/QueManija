@@ -5,6 +5,14 @@
     display: flex;
     justify-content: space-between;
     padding: 5px 15px;
+    width: 100%;
+    height: auto;
+    position: sticky;
+}
+
+.oculto {
+    transform: translateY(-100%);
+    opacity: 0;
 }
 
 .header__nav {
@@ -13,6 +21,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 .header__logo {
@@ -33,3 +42,14 @@
 }
 
 /* fin header */
+
+/* inicio responsive */
+@media (min-width: 1200px) {
+    .header {
+        padding: 10px 50px;
+    }
+
+    .header__cart {
+        gap: 30px;
+    }
+}

@@ -1,0 +1,40 @@
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__contenedor {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    gap: 30px 10px;
+    padding: 30px 20px;
+    justify-content: center;
+    align-items: center2;
+}
+
+.card {
+    max-width: 180px;
+}
+
+.card__product {
+    padding: 10px;
+}
+
+.card:hover {
+    background-color: #181717;
+    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-5px);
+    }
+}

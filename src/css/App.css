@@ -29,31 +29,12 @@
     background: red;
 }
 
-/* card */
-.card {
-    background: #1f1e1e;
-    width: 80%;
-    height: auto;
-    margin: 5% 10%;
-}
-
-.card__titleRopa {
-    font-size: 1rem;
-    margin: 0 0 10px 0;
-}
-
-.card__colors {
+ul {
+    padding: 0 !important;
+    margin: 0 auto;
     display: flex;
-    flex-flow: row nowrap;
-    gap: 5px;
-}
-
-.card__content {
-    padding: 5px 10px;
-}
-
-.card__title {
-    margin: 10px 0;
+    justify-content: center;
+    align-items: center;
 }
 
 /* carousel Card*/

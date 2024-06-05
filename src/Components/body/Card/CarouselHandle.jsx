@@ -6,7 +6,7 @@ import { autoPlay } from "react-swipeable-views-utils";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
-export function CarouselHandle({ images, altura }) {
+export function CarouselHandle({ images, altura, objFit }) {
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
 
@@ -37,7 +37,7 @@ export function CarouselHandle({ images, altura }) {
                 height: `${altura}`,
                 display: "block",
                 aspectRatio: "1/1",
-                objectFit: "cover",
+                objectFit: `${objFit}`,
                 overflow: "hidden",
                 width: "100%",
               }}

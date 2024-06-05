@@ -1,0 +1,10 @@
+img {
+    width: 100%;
+    height: auto;
+}
+
+.img__card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
