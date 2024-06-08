@@ -11,9 +11,6 @@ export function CardProducto({ producto }) {
               <h3>{data.title}</h3>
               {/* <p>{data.description}</p> */}
               <span>${data.precio}</span>
-              <div>
-                <button>comprar</button>
-              </div>
             </div>
           </div>
         ))}

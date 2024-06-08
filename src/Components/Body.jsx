@@ -5,7 +5,7 @@ import { CardProducto } from "./body/Productos/Card/CardProducto";
 import Productos from "./body/Productos";
 import remeras from "../Mocks/ropa.json";
 
-import foto1 from "./../img/Remeras/imgMujer.JPG";
+import foto1 from "./../img/Remeras/imgMujer3.JPG";
 import { Typography } from "@mui/material";
 import "./body.css";
 

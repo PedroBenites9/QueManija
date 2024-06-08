@@ -11,11 +11,14 @@ section h3 {
 .section__cajaText {
     display: flex;
     gap: 4rem;
-    padding: 0 5rem;
+}
+
+.section__text>p {
+    padding: 1rem 10rem;
 }
 
 #fotoMujer {
-    width: 300px;
+    max-width: 550px;
     height: auto;
 }
 
