@@ -8,9 +8,12 @@ import remeras from "../Mocks/ropa.json";
 import foto1 from "./../img/Remeras/imgMujer3.JPG";
 import { Typography } from "@mui/material";
 import "./body.css";
+import useScreenSize from "../hooks/useScreenSize";
 
 const Body = () => {
   const [remera] = useState(remeras.remeras);
+  const { width } = useScreenSize();
+
   return (
     <>
       <Home />
@@ -28,7 +31,9 @@ const Body = () => {
         Compras superiores a $30000, envio gratis
       </Typography>
       <section className="section__cajaText">
-        <img id="fotoMujer" src={foto1} alt="fotoMujer" />
+        {width <= 750 ? null : (
+          <img id="fotoMujer" src={foto1} alt="fotoMujer" />
+        )}
         <div className="section__text">
           <h3>Somos moda urbana</h3>
           <p>

@@ -26,10 +26,9 @@ export function CarouselHandle({ images, altura, objFit }) {
       index={activeStep}
       onChangeIndex={handleStepChange}
       enableMouseEvents
-      key={leKey}
     >
       {images.map((step, index) => (
-        <div key={step.label}>
+        <div key={index}>
           {Math.abs(activeStep - index) <= 2 ? (
             <Box
               component="img"
