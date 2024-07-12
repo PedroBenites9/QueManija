@@ -25,13 +25,14 @@
 h3,
 p {
     margin: 0;
-
 }
 
 .home__text {
     text-align: center;
     top: 80px;
     right: auto;
+    width: 650px;
+    height: auto;
 }
 
 .home__contenedor h3 {

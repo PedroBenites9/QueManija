@@ -38,3 +38,15 @@
         transform: translateY(-5px);
     }
 }
+
+@media (min-width: 1500px) {
+    .card {
+        max-width: 300px;
+    }
+
+    .card__product {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 1em;
+    }
+}

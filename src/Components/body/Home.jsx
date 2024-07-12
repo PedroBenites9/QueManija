@@ -45,18 +45,10 @@ export function Home() {
       </div>
       <div className="home__contenedor">
         <div className="home__text  ">
-          <h3>Define tu estilo urbano</h3>
-          <p>resalta ante el mundo </p>
-          <p>simple o llamativo, es lo que vos finas</p>
+          <h3>Que Manija Urbana: Tu tienda de moda streetwear</h3>
+          <p></p>
         </div>
-        <button
-          className="button-54"
-          onClick={() => {
-            alert("hola xd");
-          }}
-        >
-          que manija!
-        </button>
+        {/* <button className="button-54">que manija!</button> */}
       </div>
     </div>
   );

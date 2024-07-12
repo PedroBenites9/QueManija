@@ -25,10 +25,10 @@ const Header = ({ children }) => {
     <header className="header__scroll header">
       {width <= 750 ? <MenuLeft /> : <LinkNav />}
       {children}
-      <div className="header__cart">
+      {/* <div className="header__cart">
         <LocalShippingIcon />
         <Cart />
-      </div>
+      </div> */}
     </header>
   );
 };

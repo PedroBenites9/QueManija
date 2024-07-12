@@ -1,26 +1,93 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Home } from "./body/Home";
 import { CardProducto } from "./body/Productos/Card/CardProducto";
+
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import Productos from "./body/Productos";
 import remeras from "../Mocks/ropa.json";
 
 import foto1 from "./../img/Remeras/imgMujer3.JPG";
 import { Typography } from "@mui/material";
-import "./body.css";
 import useScreenSize from "../hooks/useScreenSize";
+
+import "./../css/textDecoration.css";
+import "./body.css";
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const Body = () => {
   const [remera] = useState(remeras.remeras);
   const { width } = useScreenSize();
 
+  const remerasWord = useRef();
+  const oversizeWord = useRef();
+  const wordAnimate = useRef();
+  const wordTwoAnimate = useRef();
+
+  useGSAP(() => {
+    gsap.to(remerasWord.current, {
+      scrollTrigger: {
+        trigger: ".name",
+        toggleActions: "restart pause reverse pause",
+        // markers: true,
+        scrub: true,
+      },
+      x: 50,
+      duration: 2,
+    });
+    gsap.to(oversizeWord.current, {
+      scrollTrigger: {
+        trigger: ".name2",
+        toggleActions: " restart none none none",
+        // markers: true,
+        scrub: true,
+      },
+      x: -50,
+      duration: 2,
+    });
+    gsap.to(wordAnimate.current, {
+      scrollTrigger: {
+        trigger: ".gorra",
+        toggleActions: "restart pause reverse pause",
+        // markers: true,
+        scrub: true,
+      },
+      x: 100,
+      duration: 2,
+    });
+    gsap.to(wordTwoAnimate.current, {
+      scrollTrigger: {
+        trigger: ".gorra2",
+        toggleActions: " restart none none none",
+        // markers: true,
+        scrub: true,
+      },
+      x: -100,
+      duration: 2,
+    });
+  });
+
   return (
-    <>
+    <main>
       <Home />
       <section className="section__card">
-        <h3 style={{ fontSize: "2rem", margin: " 30px 0" }}>MODA URBANA</h3>
+        <div class="wrapper invert">
+          <span ref={remerasWord} className="name" data-text="Remeras"></span>
+          <span
+            ref={oversizeWord}
+            className="name2"
+            data-text="Oversize"
+          ></span>
+        </div>
+        <div className="wrapper subtitle">
+          <span data-text="Coleccion Basic"></span>
+        </div>
         <CardProducto producto={remera} />
       </section>
+
       <Typography
         sx={{
           textAlign: "center",
@@ -30,6 +97,7 @@ const Body = () => {
       >
         Compras superiores a $30000, envio gratis
       </Typography>
+
       <section className="section__cajaText">
         {width <= 750 ? null : (
           <img id="fotoMujer" src={foto1} alt="fotoMujer" />
@@ -37,16 +105,38 @@ const Body = () => {
         <div className="section__text">
           <h3>Somos moda urbana</h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quos,
-            iure, facilis tenetur nam ducimus doloribus, molestias neque facere
-            corrupti eum aut animi reprehenderit quod ad deleniti sed
-            accusantium? Consequuntur.
+            Explora nuestras colecciones y encuentra las prendas que se adaptan
+            a tu estilo de vida urbano. Además, no te pierdas nuestras novedades
+            y ofertas exclusivas. ¡Síguenos en Instagram para estar al tanto de
+            todas las tendencias y ser parte de nuestra comunidad!
           </p>
         </div>
       </section>
 
-      {/* <Carousel /> */}
-    </>
+      <Typography
+        sx={{
+          textAlign: "center",
+          bgcolor: "#212121",
+          padding: "2px 0 2px 0",
+        }}
+      >
+        Aceptamos tarjetas de cualquier banco!
+      </Typography>
+      <div className="gorras">
+        <div class="wrapper invert">
+          <span ref={wordAnimate} className="gorra" data-text="Gorra"></span>
+          <span
+            ref={wordTwoAnimate}
+            className="gorra2"
+            data-text="Urban"
+          ></span>
+        </div>
+        <div className="wrapper subtitle">
+          <span data-text="Coleccion Snapback"></span>
+        </div>
+        <CardProducto producto={remera} />
+      </div>
+    </main>
   );
 };
 
