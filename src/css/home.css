@@ -1,16 +1,15 @@
 .home {
-    height: 100vh;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-items: center;
     position: relative;
 }
 
 .home__carousel {
     opacity: .35;
     z-index: -1;
+    width: auto;
+    height: auto;
 }
 
 .home__contenedor {
@@ -18,23 +17,28 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 230px;
+    top: 300px;
     gap: 40px;
 }
 
 h3,
 p {
     margin: 0;
-
 }
 
 .home__text {
     text-align: center;
+    width: 100%;
+    height: auto;
 }
 
 .home__contenedor h3 {
-    font-size: x-large;
-    font-weight: 900;
+    font-size: 3.2rem;
+    font-weight: bolder;
+    color: #000000;
+    font-family: "Open Sans", sans-serif;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #5de726;
 }
 
 /* CSS */

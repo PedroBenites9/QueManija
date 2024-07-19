@@ -12,6 +12,8 @@ import {
 import Footer from "./Components/Footer";
 import { ColorRopaProvider } from "./context/ColorRopa";
 import { ProductProvider } from "./context/ProductContext";
+import { BrowserRouter } from "react-router-dom";
+import RoutesMain from "./Routes/RoutesMain";
 
 const App = () => {
   const darkModeToggle = useMediaQuery("(prefers-color-scheme: dark)");
@@ -35,9 +37,10 @@ const App = () => {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <ProductProvider>
-          <Header />
           <ColorRopaProvider>
-            <Body />
+            <BrowserRouter>
+              <RoutesMain />
+            </BrowserRouter>
           </ColorRopaProvider>
         </ProductProvider>
         <Footer />

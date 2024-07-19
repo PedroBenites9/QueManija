@@ -27,8 +27,8 @@ const images = [
 
 function Carousel() {
   return (
-    <Box sx={{ maxWidth: "100%", margin: "15px 0", flexGrow: 1 }}>
-      <CarouselHandle images={images} altura="300px" />
+    <Box sx={{ maxWidth: "100%", flexGrow: 1 }}>
+      <CarouselHandle images={images} altura="400px" objFit={"fill"} />
     </Box>
   );
 }

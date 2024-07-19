@@ -1,0 +1,49 @@
+
+{
+    "remeras":[{
+        "id":1,
+        "title": "Remera Oversize Rosado",
+        "description":"Remera oversize bien fachera color bordo",
+        "precio": 5000,
+        "stock": 50,
+        "categoria": "Remera",
+        "color": "#e10552"
+        ,
+        "imagen":[
+            "https://i.ibb.co/xXggnLq/Hombre-Remera-Bordo3.jpg",
+            "https://i.ibb.co/TK6S4kB/Hombre-Remera-Bordo.jpg",
+            "https://i.ibb.co/pb77NMc/Hombre-Remera push-Bordo2.jpg"
+        ]
+    },{
+    
+        "id":2,
+        "title": "Remera Oversize Negro",
+        "description":"Remera oversize bien fachera color negro",
+        "precio": 5000,
+        "stock": 50,
+        "categoria": "Remera",
+        "color":"#000",
+        "imagen":[
+            "https://i.ibb.co/HDwzvDq/Hombre-Remera-Negro3.jpg",
+            "https://i.ibb.co/850WWQ8/Hombre-Remera-Negro2.jpg",
+            "https://i.ibb.co/B4wmMdx/Hombre-Remera-Negro.jpg"
+        ]
+    },
+    {
+    
+        "id":3,
+        "title": "Remera Oversize Verde",
+        "description":"Remera oversize bien fachera color verde",
+        "precio": 5000,
+        "stock": 50,
+        "categoria": "Remera",
+        "color": "#50C878"
+        ,
+        "imagen":[
+            "https://i.ibb.co/pXw3rM7/Hombre-Remera-Verde3.jpg",
+            "https://i.ibb.co/yXVtLQT/Hombre-Remera-Verde2.jpg",
+            "https://i.ibb.co/gy8tnfS/Hombre-Remera-Verde.jpg"
+        ]
+    }
+]
+}

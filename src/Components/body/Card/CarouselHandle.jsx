@@ -6,18 +6,12 @@ import { autoPlay } from "react-swipeable-views-utils";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
-export function CarouselHandle({ images, altura }) {
+export function CarouselHandle({ images, altura, ancho, objFit }) {
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
 
   const handleStepChange = (step) => {
     setActiveStep(step);
-  };
-
-  const leKey = () => {
-    return images.map((img, i) => {
-      return i;
-    });
   };
 
   return (
@@ -26,20 +20,19 @@ export function CarouselHandle({ images, altura }) {
       index={activeStep}
       onChangeIndex={handleStepChange}
       enableMouseEvents
-      key={leKey}
     >
       {images.map((step, index) => (
-        <div key={step.label}>
+        <div key={index}>
           {Math.abs(activeStep - index) <= 2 ? (
             <Box
               component="img"
               sx={{
                 height: `${altura}`,
                 display: "block",
-                aspectRatio: "1/1",
-                objectFit: "cover",
+                aspectRatio: "auto",
+                objectFit: `${objFit}`,
                 overflow: "hidden",
-                width: "100%",
+                width: `${ancho}`,
               }}
               src={step.imgPath}
               alt={step.label}

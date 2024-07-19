@@ -24,6 +24,7 @@ const Footer = () => {
   return (
     <footer>
       <img src={logo} alt="logo footer" />
+      <h3>Seguinos en nuestras redes y enterate todas las novedades!</h3>
       <div className="footer__linksRedes">
         <FacebookIcon
           onClick={() => handlePage("facebook")}

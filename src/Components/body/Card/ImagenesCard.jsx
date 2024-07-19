@@ -1,7 +1,5 @@
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import "./remera.css";
+import Slider from "react-slick/lib/slider";
+import "./imagenCard.css";
 export default function ImagenesCard({ url }) {
   const NextArrow = (props) => {
     const { className, style, onClick } = props;
