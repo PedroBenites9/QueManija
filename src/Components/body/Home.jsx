@@ -40,13 +40,18 @@ export function Home() {
         {width <= 750 ? (
           <CarouselHandle images={images} altura={"100vh"} objFit="cover" />
         ) : (
-          <CarouselHandle images={images2} altura={"100vh"} objFit="contain" />
+          <CarouselHandle
+            images={images2}
+            altura={"auto"}
+            ancho={"100%"}
+            objFit="contain"
+          />
         )}
       </div>
       <div className="home__contenedor">
         <div className="home__text  ">
-          <h3>Que Manija Urbana: Tu tienda de moda streetwear</h3>
-          <p></p>
+          <h3>Que Manija Urbana</h3>
+          <h3>Tu tienda de moda streetwear</h3>
         </div>
         {/* <button className="button-54">que manija!</button> */}
       </div>

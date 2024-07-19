@@ -1,3 +1,16 @@
+.main__contenedor {
+    display: flex;
+
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.contenedor__section {
+    width: 1500px;
+}
+
 section h3 {
     text-align: center;
 }
@@ -10,17 +23,13 @@ section h3 {
 
 .section__cajaText {
     display: flex;
-    gap: 4rem;
-}
-
-.section__text>p {
-    padding: 1rem 10rem;
+    justify-content: space-around;
+    gap: 5rem;
 }
 
 #fotoMujer {
     max-width: 550px;
     height: auto;
-    margin: 0 0 0 15rem;
 }
 
 .section__text {

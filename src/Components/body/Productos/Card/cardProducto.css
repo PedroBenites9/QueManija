@@ -8,10 +8,10 @@
     display: flex;
     flex-flow: row wrap;
     width: 100%;
-    gap: 100px;
+    gap: 50px;
     padding: 30px 20px;
     justify-content: center;
-    align-items: center2;
+    align-items: center;
 }
 
 .card {

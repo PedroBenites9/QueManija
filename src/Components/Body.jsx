@@ -71,70 +71,71 @@ const Body = () => {
   });
 
   return (
-    <main>
+    <main className="main__contenedor">
       <Home />
-      <section className="section__card">
-        <div class="wrapper invert">
-          <span ref={remerasWord} className="name" data-text="Remeras"></span>
-          <span
-            ref={oversizeWord}
-            className="name2"
-            data-text="Oversize"
-          ></span>
-        </div>
-        <div className="wrapper subtitle">
-          <span data-text="Coleccion Basic"></span>
-        </div>
-        <CardProducto producto={remera} />
-      </section>
+      <div className="contenedor__section">
+        <section className="section__card">
+          <div class="wrapper invert">
+            <span ref={remerasWord} className="name" data-text="Remeras"></span>
+            <span
+              ref={oversizeWord}
+              className="name2"
+              data-text="Oversize"
+            ></span>
+          </div>
+          <div className="wrapper subtitle">
+            <span data-text="Coleccion Basic"></span>
+          </div>
+          <CardProducto producto={remera} />
+          <Typography
+            sx={{
+              textAlign: "center",
+              bgcolor: "#212121",
+              padding: "2px 0 2px 0",
+              width: "100%",
+            }}
+          >
+            Compras superiores a $30000, envio gratis
+          </Typography>
+        </section>
 
-      <Typography
-        sx={{
-          textAlign: "center",
-          bgcolor: "#212121",
-          padding: "2px 0 2px 0",
-        }}
-      >
-        Compras superiores a $30000, envio gratis
-      </Typography>
-
-      <section className="section__cajaText">
-        {width <= 750 ? null : (
-          <img id="fotoMujer" src={foto1} alt="fotoMujer" />
-        )}
-        <div className="section__text">
-          <h3>Somos moda urbana</h3>
-          <p>
-            Explora nuestras colecciones y encuentra las prendas que se adaptan
-            a tu estilo de vida urbano. Además, no te pierdas nuestras novedades
-            y ofertas exclusivas. ¡Síguenos en Instagram para estar al tanto de
-            todas las tendencias y ser parte de nuestra comunidad!
-          </p>
+        <section className="section__cajaText">
+          {width <= 750 ? null : (
+            <img id="fotoMujer" src={foto1} alt="fotoMujer" />
+          )}
+          <div className="section__text">
+            <h3>Somos moda urbana</h3>
+            <p>
+              Explora nuestras colecciones y encuentra las prendas que se
+              adaptan a tu estilo de vida urbano. Además, no te pierdas nuestras
+              novedades y ofertas exclusivas. ¡Síguenos en Instagram para estar
+              al tanto de todas las tendencias y ser parte de nuestra comunidad!
+            </p>
+          </div>
+        </section>
+        <div className="gorras">
+          <Typography
+            sx={{
+              textAlign: "center",
+              bgcolor: "#212121",
+              padding: "2px 0 2px 0",
+            }}
+          >
+            Que Manija!
+          </Typography>
+          <div class="wrapper invert">
+            <span ref={wordAnimate} className="gorra" data-text="Gorra"></span>
+            <span
+              ref={wordTwoAnimate}
+              className="gorra2"
+              data-text="Urbana"
+            ></span>
+          </div>
+          <div className="wrapper subtitle">
+            <span data-text="Coleccion Snapback"></span>
+          </div>
+          <CardProducto producto={remera} />
         </div>
-      </section>
-
-      <Typography
-        sx={{
-          textAlign: "center",
-          bgcolor: "#212121",
-          padding: "2px 0 2px 0",
-        }}
-      >
-        Aceptamos tarjetas de cualquier banco!
-      </Typography>
-      <div className="gorras">
-        <div class="wrapper invert">
-          <span ref={wordAnimate} className="gorra" data-text="Gorra"></span>
-          <span
-            ref={wordTwoAnimate}
-            className="gorra2"
-            data-text="Urban"
-          ></span>
-        </div>
-        <div className="wrapper subtitle">
-          <span data-text="Coleccion Snapback"></span>
-        </div>
-        <CardProducto producto={remera} />
       </div>
     </main>
   );
